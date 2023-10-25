@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dean's Disk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        body{
+            font-family: "Roboto Slab";
+            overflow-x: hidden;
+        }
+        @media (max-width: 395px){
+            .deanimg{
+                max-width: 250px;
+                max-height: 200px;
+            }
+             
+        }
+        @media (max-width: 279px){
+            .deanimg{
+                max-width: 150px;
+                max-height: 100px;
+            }
+             
+        }
+
+
+        @media (max-width: 375px) {
+            .deanimg{
+                height: 80px;
+                width: 125px;
+            }
+             
+        }
+        @media (max-width: 414px){
+            .deanimg{
+                max-width: 280px;
+                max-height: 250px;
+            }
+             
+        }
+        @media (max-width: 360px){
+            .deanimg{
+                max-width: 250px;
+                max-height: 200px;
+            }
+             
+        }
+        @media (max-width:992px) {
+            .deanimg{
+            max-width: 350px;
+            max-height: 250px;
+            border: 10px auto !important;
+        }
+            .para{
+                margin-top: -80px;
+            }
+        }
+        .heading span{
+            background-color: #1C2B4B;
+            border-radius: 5px;
+            padding: 10px;
+            color: whitesmoke;
+        }
+        .deanimg{
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+            height: 250px;
+            width: 200px;
+            border-radius: 5px;
+            background: #ffffff;
+            transition: transform 0.1s ease;
+        }
+        .deanimg:hover{
+            transform: scale(1.05);
+        }
+        .deanimg{
+            width: 100%;
+            height: 400px;
+            width: 550px; 
+            margin-top: 20px;
+            margin-bottom: 60px;
+        }
+        .top-headder{
+            padding-left: 50px;
+            margin-bottom: -20px;
+        }
+        .logo{
+            padding: 30px;
+        }
+        .title{
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        @media (max-width: 1021px) {
+            .content-wrapper {
+            flex-direction: column; /* Stack vertically on small screens */
+            }
+        }
+        .line3{
+            padding: 5px;
+        }
+
+        /* Show the dropdown on hover */
+        @media (min-width: 992px) {
+        .navbar-nav .nav-item.dropdown .dropdown-menu {
+            display: none;
+        }
+        
+        .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+            position: absolute;
+            z-index: 1000;
+        }
+        }    
+
+        .content-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: stretch;
+        width: 100%;
+        max-width: 1200px; /* Adjust the maximum width as needed */
+        }
+
+        
+
+        @media (max-width: 991px){
+        .content-wrapper{
+            flex-direction: column;
+        }
+        .line2, .line3 {
+            display: none;
+        }
+        .dean {
+            flex-direction: column;
+        }
+        .logo{
+            padding: 20px;
+            margin-left: -20px;
+        }
+        }
+        .up{
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: all 1s ease;
+        }
+
+        .up.activateUp{
+        transform: translatey(0px);
+        opacity: 1;
+        }
+
+        #footer{
+            background-color: #1C2B4B;
+            padding-top: 10px;
+        }
+        #footer p, h5{
+            color: whitesmoke;
+        }
+        .credits{
+            color: #95A3B3;
+        }
+        .bold-nav-link{
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: #1C2B4B;">
+        <div class="container d-flex top-headder">
+            <div class="logo">
+                <img src="../media/logo/annaUniversityLogo.png" alt="UCE logo" style="height: 100px; width: 100px;">
+            </div>
+            <div class="title">
+                <h1 class="line1" style="color: white;">University College of Engineering, Thirukkuvalai</h1>
+                <h4 class="line2" style="color: white; font-size: large;">(A Constitutent College of Anna University::Chennai and Approved by AICTE, New Delhi)</h4>
+                <h5 class="line3" style="color: white; font-size: large;">THIRUKKUVALAI 601204 - NAGAPATTINAM</h5>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg" style="background-color:#95A3B3;">
+        <div class="container">
+            <a href="../index.html" class="navbar-brand bold-nav-link">UCETKY</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand-Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link bold-nav-link">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle bold-nav-link" id="navbarDropdown-about" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown-about">
+                        <a href="aboutus/profile.html" class="dropdown-item">Profile</a>
+                        <a href="aboutus/missionAndVission.html" class="dropdown-item">Mission and Vision</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="dean.html" class="nav-link" >Dean's Desk</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle bold-nav-link" id="navbarDropdown-studentneeds" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administration</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown-studentneeds">
+                        <a href="../pages/administration/universityAdministration.html" class="dropdown-item">University Administration</a>
+                        <a href="../pages/administration/collegeAdministration.html" class="dropdown-item">College Administration</a>
+                        <a href="../pages/administration/unitOffice.html" class="dropdown-item">Unit Office</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle bold-nav-link" id="navbarDropdown-academics" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Departments</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown-academics">
+                        <a href="#" class="dropdown-item">CSE</a>
+                        <a href="#" class="dropdown-item">ECE</a>
+                        <a href="#" class="dropdown-item">EEE</a>
+                        <a href="#" class="dropdown-item">MECH</a>
+                        <a href="#" class="dropdown-item">CIVIL</a>
+                        <a href="#" class="dropdown-item">SCIENCE AND HUMANITIES</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle bold-nav-link " id="navbarDropdown-studentActivites" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Student Activites</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown-studentActivites">
+                        <a href="activities/nss.html" class="dropdown-item">NSS</a>
+                        <a href="activities/rrc.html" class="dropdown-item">RRC</a>
+                        <a href="activities/yrc.html" class="dropdown-item">YRC</a>
+                        <a href="activities/sports.html" class="dropdown-item">Sports</a>
+                        <a href="activities/antiRagging.html" class="dropdown-item">Anti Ragging</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link bold-nav-link">Facilities</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle bold-nav-link" id="navbarDropdown-downloads" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Downloads</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown-downloads">
+                        <a href="/webDevelopment/UCE/media/downloads/Bonafied_Certificate.pdf" target="_blank" class="dropdown-item">Bonafide</a>
+                        <a href="/webDevelopment/UCE/media/downloads/NoDueCertificate.pdf" target="_blank" class="dropdown-item">No Due</a>
+                        <a href="/webDevelopment/UCE/media/downloads/leaveform.pdf" target="_blank" class="dropdown-item">Leave Form</a>
+                        <a href="/webDevelopment/UCE/media/downloads/WIFI-FORM STUDENT.pdf" target="_blank" class="dropdown-item">WIFI form</a>
+                        <a href="/webDevelopment/UCE/media/downloads/attendence.pdf" target="_blank" class="dropdown-item">Attendence Certificate For Transfer Students</a>
+                        <a href="/webDevelopment/UCE/media/downloads/Hostel_Caution_Deposit_Refund_Form.pdf" target="_blank" class="dropdown-item">Hostel Caution Deposit Refund Form</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link bold-nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contactus.html" class="nav-link bold-nav-link">ContactUs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    <!-- content -->
+    <div class="dean container d-flex">
+        <div class="d-flex flex-column imgandhead" style="margin-bottom: -40px;">
+            <h1 class="heading" style="text-align: left; padding-top: 20px;"><span>Dean's Desk</span></h1>
+            <img class="deanimg" src="../media/persons/Elangovan.jpg" alt="">
+        </div>
+        <div class="d-flex flex-column para" style="padding: 0px 0px 0px 20px;">
+            <h3 style="padding-top: 90px; color: #1C2B4B;">Dr. ELANGOVAN. G B.E.,M.E.,PhD.,DEAN</h3>
+            <p style="padding: 0px; font-size: larger;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolore obcaecati, enim alias cumque nostrum dolores, numquam, nobis provident maiores doloribus laudantium at dolor harum optio mollitia ut aliquid quisquam dignissimos. Obcaecati doloremque culpa totam quasi earum minus cupiditate aliquam fuga, ea quos molestias consectetur enim veniam ullam asperiores repudiandae nam facilis aliquid illo dignissimos quas odio! Fuga eaque enim, sapiente officiis nostrum aspernatur tempore impedit suscipit pariatur voluptas praesentium maiores dolorem omnis ducimus vel aliquid laboriosam asperiores quo! Est, dolorem, pariatur magni aut sint reiciendis veritatis molestias quas perspiciatis quidem commodi nemo. Delectus consequatur, autem exercitationem laboriosam dolorem cum!</p>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-muted " id="footer">
+        <!-- Section: Links  -->
+        <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h5 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>UCE TKY
+                </h5>
+                <p>
+                    (A Constitutent College of Anna University::Chennai and Approved by AICTE, New Delhi)
+                </p>
+                <p>
+                    THIRUKKUVALAI 601204 - NAGAPATTINAM
+                </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h5 class="text-uppercase fw-bold mb-4">
+                    Useful links
+                </h5>
+                <p>
+                <a href="../index.html" class="text-reset">Home</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Dean's Desk</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Facilities</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Gallery</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h5 class="text-uppercase fw-bold mb-4">
+                    Downloads
+                </h5>
+                <p>
+                <p>
+                <a href="#!" class="text-reset"></a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Bonafide</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">No Due</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Anti Ragging Application</a>
+                </p>
+                <p>
+                    <a href="#!" class="text-reset">On Duty Application</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h5 class="text-uppercase fw-bold mb-4">Contact</h5>
+                <p><i class="fas fa-home "></i>
+                    University College of Engineering, Thirukkuvalai
+                    Nagapattinam District.
+                    Nearest Railway Station - Thiruvarur
+                    Pincode - 610204</p>
+                <p>
+                <i class="fas fa-envelope"></i>
+                dean_ucetk@aucetk.edu.in, deantkly@gmail.com
+                </p>
+                <p><i class="fas fa-phone "></i>Phone: +91 04366-245234</p>
+                <p><i class="fas fa-print "></i>Mobile No: +91 9363338721</p>
+            </div>
+            <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        </section>
+        <!-- Section: Links  -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-4 credits" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2023
+        <a class="text-reset fw-bold" href="">Designed and Developed by Web Team, UCETKY</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+  <!-- Footer -->
+
+
+    <script>
+        window.addEventListener('scroll', up);
+
+        function up() {
+        var reveals = document.querySelectorAll('.up');
+        var windowheight = window.innerHeight;
+
+        for (var i = 0; i < reveals.length; i++) {
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 50;
+
+            if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add('activateUp');
+            } else {
+            reveals[i].classList.remove('activateUp');
+            }
+        }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,368 @@
+body{
+    font-family: "Roboto Slab";
+    overflow-x: hidden;
+}
+
+.bold-nav-link{
+  font-size: 17px;
+}
+
+.top-headder{
+  padding-left: 50px;
+  margin-bottom: -20px;
+}
+
+
+.logo {
+    padding: 30px;
+}
+
+.title{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+@media (max-width: 1021px) {
+  .content-wrapper {
+    flex-direction: column; /* Stack vertically on small screens */
+  }
+}
+
+
+/* Show the dropdown on hover */
+@media (min-width: 992px) {
+  .navbar-nav .nav-item.dropdown .dropdown-menu {
+      display: none;
+  }
+  
+  .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+      position: absolute;
+      z-index: 1000;
+  }
+}    
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1200px; /* Adjust the maximum width as needed */
+}
+
+@media (max-width: 991px){
+  .content-wrapper{
+    flex-direction: column;
+  }
+}
+.aboutcollege {
+  flex: 3;
+  padding: 20px;
+  font-size: 21px;
+  border: 0px;
+  animation-name: homepara;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  /* Add styling for aboutcollege */
+}
+
+@keyframes homepara {
+  0%{
+      position: relative;
+      opacity: 0;
+      top: 100px;
+  }
+  100%{
+      position: relative;
+      opacity: 1;
+      top: 0px;
+  }
+}
+
+.newsandupdates{
+  flex: 1;
+  padding: 20px;
+  font-size: 18px;
+  /* Add styling for newsandupdates */
+}
+
+.custom-card{
+max-height: 450px;
+overflow: hidden;
+}
+
+.scrollable-content{
+height: 100%;
+overflow: auto;
+}
+
+.course-container {
+    display: flex;
+    flex: row;
+    justify-content: center;
+}
+@media (max-width: 991px) {
+  .course-wrapper img{
+    display: none;
+  }
+  .logo{
+    margin-left: -30px;
+    }
+  .course-wrapper{
+    size: 20px;
+    padding-right:px;
+  }
+  .content-wrapper h4{
+    text-align: center;
+  }
+  .course-wrapper h2{
+    text-align: center;
+    padding-right: 70px;
+  }
+  .line2, .line3 {
+    display: none;
+  }
+
+}
+
+.course-container{
+  text-align: left;
+}
+
+.course-wrapper h1,h4{
+  padding-bottom: 20px;
+}
+
+.course-wrapper{
+  display: flex;
+  flex-direction: row;
+  gap: 75px;
+}
+
+.course-wrapper span, .newsandupdates span, .links span, .apj .thingsHeading{
+  background-color: #1C2B4B;
+  border-radius: 5px;
+  padding: 10px;
+  color: whitesmoke;
+}
+.courses-heading{ 
+  padding-bottom: 20px;
+}
+
+.rlheading{
+  padding: 30px 0px 30px 0px;
+  text-align: center;
+}
+
+.link-card {
+  height: 250px;
+  width: 200px;
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.link-card:hover{
+  transform: scale(1.1);
+}
+
+.rlcards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.link-card img{
+  height: 150px;
+  width: 150px;
+  margin-left: 25px;
+  padding: 0px 20px 50px 20px;
+}
+
+.link-card h4{
+  padding-top: 30px;
+  text-decoration: none;
+}
+
+@media (max-width: 491px) {
+  .related-link{
+    display: none;
+  }
+}
+.things{
+  padding: 20px;
+  display: flex;
+}
+
+.things h3 {
+  padding: 10px;
+  text-align: center;
+}
+
+.counsellingNo{
+  font-size: 40px;
+  color:#1C2B4B;
+}
+
+.things h2{
+  padding: 40px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.apj{
+  display: flex;
+  justify-content: right;
+}
+
+.apj h1{
+  padding: 75px;
+} 
+
+.last-img{
+  width: 650px;
+  z-index: -1;
+  margin-bottom: -35px;
+}
+
+#footer{
+  background-color: #1C2B4B;
+  padding-top: 10px;
+}
+#footer p, h5{
+  color: whitesmoke;
+}
+.credits{
+  color: #95A3B3;
+}
+
+
+
+.up{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.up.activateUp{
+  transform: translatey(0px);
+  opacity: 1;
+}
+
+
+.right{
+  position: relative;
+  transform: translateX(-10px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.right.activateRight{
+  transform: translate(0px);
+  opacity: 3;
+}
+
+.left{
+  position: relative;
+  transform: translateX(10px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.left.activateLeft{
+  transform: translate(0px);
+  opacity: 1;
+}
+
+.uponlap{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.activateUponactive{
+  transform: translatey(0px);
+  opacity: 1;
+}
