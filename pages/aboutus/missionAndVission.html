@@ -13,25 +13,11 @@
             font-family: "Roboto Slab";
             overflow-x: hidden;
         }
-        .top-headder{
-            padding-left: 50px;
-            margin-bottom: -20px;
-        }
-        .logo{
-            padding: 30px;
-        }
-        .title{
-            padding-top: 25px;
-            padding-bottom: 25px;
-        }
 
         @media (max-width: 1021px) {
             .content-wrapper {
             flex-direction: column; /* Stack vertically on small screens */
             }
-        }
-        .line3{
-            padding: 5px;
         }
 
         /* Show the dropdown on hover */
@@ -60,14 +46,6 @@
         .content-wrapper{
             flex-direction: column;
         }
-        .line2, .line3 {
-            display: none;
-        }
-        .logo{
-            padding: 20px;
-            margin-left: -20px;
-
-        }
         }
         .up{
         position: relative;
@@ -94,18 +72,60 @@
         .bold-nav-link{
           font-size: 17px;
         }
+        .header{
+            background-color: #1C2B4B;
+            justify-content: center;
+        }
+
+        .title{
+            color: whitesmoke;
+            text-align: center;
+            margin: 20px 0px 20px 0px;
+        }
+
+        .title h1{
+            text-align: center;
+        }
+
+        .logo img{
+            height: 125px;
+            width: 125px;
+            margin: 20px 20px 20px 20px;
+        }
+
+        @media (max-width:991px) {
+            .title h4{
+                display: none;
+            }
+            .title h5{
+                display: none;
+            }
+            .logo img{
+                height: 125px;
+                width: 125px;
+            }
+            .logo{
+                padding: 20px 10px 20px 20px;
+            }
+            .title h1{
+                color: whitesmoke;
+                font-size: 30px;
+                margin-top: 7px;
+                padding-right: 20px;
+            }
+        }
     </style>
 </head>
 <body>
-    <header style="background-color: #1C2B4B;">
-        <div class="container d-flex top-headder">
+    <header>
+        <div class="d-flex header">            
             <div class="logo">
-                <img src="../../media/logo/annaUniversityLogo.png" alt="UCE logo" style="height: 100px; width: 100px;">
+                <img src="/media/logo/annaUniversityLogo.png" alt="UCE logo">
             </div>
             <div class="title">
-                <h1 class="line1" style="color: white;">University College of Engineering, Thirukkuvalai</h1>
-                <h4 class="line2" style="color: white; font-size: large;">(A Constitutent College of Anna University::Chennai and Approved by AICTE, New Delhi)</h4>
-                <h5 class="line3" style="color: white; font-size: large;">THIRUKKUVALAI 601204 - NAGAPATTINAM</h5>
+                <h1>University College of Engineering, Thirukkuvalai</h1>
+                <h4>(A Constitutent College of Anna University::Chennai and Approved by AICTE, New Delhi)</h4>
+                <h5>THIRUKKUVALAI 601204 - NAGAPATTINAM</h5>
             </div>
         </div>
     </header>
@@ -197,6 +217,7 @@
         .content{
             padding: 20px;
             font-size: 20px;
+            text-align: justify;
         }
         .img{
             border-radius: 5px;
@@ -210,6 +231,11 @@
         .mission, .vision{
             font-size: 20px;
         }
+
+        .mission{
+            padding-top: 20px;
+        }
+
         h3{
             font-weight: bold;
         }
@@ -241,23 +267,23 @@
         <div>
             <div class="mission">
                 <h3>Mission:</h3>
-                <p>Anna University is to be a world class institution by producing professionals with high technical knowledge, professional skills and ethical values and remain as a preferred partner to the industry and community for their economic and social development through excellence in teaching, research and consultancy. Anna University shall be recognized as a point of reference, a catalyst, a facilitator, a trend setter and a leader in technical education.</p>
+                <p class="content">Anna University is to be a world class institution by producing professionals with high technical knowledge, professional skills and ethical values and remain as a preferred partner to the industry and community for their economic and social development through excellence in teaching, research and consultancy. Anna University shall be recognized as a point of reference, a catalyst, a facilitator, a trend setter and a leader in technical education.</p>
             </div>
             <div class="vision">
                 <h3>Vision:</h3>
-                <p>Anna University shall contribute to the educational, economic and social development by:</p>
+                <p class="content">Anna University shall contribute to the educational, economic and social development by:</p>
                 <ul class="list">
-                    <li class="image">Producing students who are intellectually and technically equipped with well-defined knowledge, skills and ethics who are creative thinkers, inspiring leaders and contributing citizens.</li>
-                    <li class="image">Introducing high quality academic and research programs and providing extension services in cutting edge technologies.</li>
-                    <li class="image">Ensuring a supportive campus climate with dynamic leadership and development opportunities to meet the needs of the students, faculty and staff.</li>
-                    <li class="image">Enhancing academic productivity through induction of quality faculty, accelerated graduation, credit banking, augmented continuing education opportunities and adoption of current technology.</li>
-                    <li class="image">Sharing the intellectual resources and infrastructural facilities among the academia from other institutions and among the industrial society, funding agencies and government.</li>
-                    <li class="image">Enhancing the collaborative partnership between Industry and Institute for commercializing and transferring the latest technological know-how towards societal development.</li>
-                    <li class="image">Setting up a Global University Network Campus that embodies the ideals of an open, democratic and global society catering to the needs of the global community and satisfying cultural, ethnic and racial diversity.</li>
-                    <li class="image">Expanding global participation spread across continents with the aid of interactive satellite based education and the usage of digital library.</li>
-                    <li class="image">Enriching the national and international character of the university.</li>
-                    <li class="image">Ensuring efficient administrative co-ordination and effective decision-making through necessary reforms and by strategically allocating resources.</li>
-                    <li class="image">Benchmarking against technologically sound global leaders with a view towards continuous improvement.</li>
+                    <li class="image content">Producing students who are intellectually and technically equipped with well-defined knowledge, skills and ethics who are creative thinkers, inspiring leaders and contributing citizens.</li>
+                    <li class="image content">Introducing high quality academic and research programs and providing extension services in cutting edge technologies.</li>
+                    <li class="image content">Ensuring a supportive campus climate with dynamic leadership and development opportunities to meet the needs of the students, faculty and staff.</li>
+                    <li class="image content">Enhancing academic productivity through induction of quality faculty, accelerated graduation, credit banking, augmented continuing education opportunities and adoption of current technology.</li>
+                    <li class="image content">Sharing the intellectual resources and infrastructural facilities among the academia from other institutions and among the industrial society, funding agencies and government.</li>
+                    <li class="image content">Enhancing the collaborative partnership between Industry and Institute for commercializing and transferring the latest technological know-how towards societal development.</li>
+                    <li class="image content">Setting up a Global University Network Campus that embodies the ideals of an open, democratic and global society catering to the needs of the global community and satisfying cultural, ethnic and racial diversity.</li>
+                    <li class="image content">Expanding global participation spread across continents with the aid of interactive satellite based education and the usage of digital library.</li>
+                    <li class="image content">Enriching the national and international character of the university.</li>
+                    <li class="image content">Ensuring efficient administrative co-ordination and effective decision-making through necessary reforms and by strategically allocating resources.</li>
+                    <li class="image content">Benchmarking against technologically sound global leaders with a view towards continuous improvement.</li>
                 </ul>
             </div>
         </div>

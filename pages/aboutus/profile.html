@@ -13,25 +13,11 @@
             font-family: "Roboto Slab";
             overflow-x: hidden;
         }
-        .top-headder{
-            padding-left: 50px;
-            margin-bottom: -20px;
-        }
-        .logo{
-            padding: 30px;
-        }
-        .title{
-            padding-top: 25px;
-            padding-bottom: 25px;
-        }
 
         @media (max-width: 1021px) {
             .content-wrapper {
             flex-direction: column; /* Stack vertically on small screens */
             }
-        }
-        .line3{
-            padding: 5px;
         }
 
         /* Show the dropdown on hover */
@@ -56,21 +42,6 @@
         max-width: 1200px; /* Adjust the maximum width as needed */
         }
 
-        @media (max-width: 991px){
-        .content-wrapper{
-            flex-direction: column;
-        }
-        .line2, .line3 {
-            display: none;
-        }
-        .dean {
-            flex-direction: column;
-        }
-        .logo{
-            padding: 20px;
-            margin-left: -20px;
-        }
-        }
         .up{
         position: relative;
         transform: translateY(150px);
@@ -96,18 +67,60 @@
         .bold-nav-link{
           font-size: 17px;
         }
+        .header{
+            background-color: #1C2B4B;
+            justify-content: center;
+        }
+
+        .title{
+            color: whitesmoke;
+            text-align: center;
+            margin: 20px 0px 20px 0px;
+        }
+
+        .title h1{
+            text-align: center;
+        }
+
+        .logo img{
+            height: 125px;
+            width: 125px;
+            margin: 20px 20px 20px 20px;
+        }
+
+    @media (max-width:991px) {
+            .title h4{
+                display: none;
+            }
+            .title h5{
+                display: none;
+            }
+            .logo img{
+                height: 125px;
+                width: 125px;
+            }
+            .logo{
+                padding: 20px 10px 20px 20px;
+            }
+            .title h1{
+                color: whitesmoke;
+                font-size: 30px;
+                margin-top: 7px;
+                padding-right: 20px;
+            }
+        }
     </style>
 </head>
 <body>
-    <header style="background-color: #1C2B4B;">
-        <div class="container d-flex top-headder">
+    <header>
+        <div class="d-flex header">            
             <div class="logo">
-                <img src="../../media/logo/annaUniversityLogo.png" alt="UCE logo" style="height: 100px; width: 100px;">
+                <img src="/media/logo/annaUniversityLogo.png" alt="UCE logo">
             </div>
             <div class="title">
-                <h1 class="line1" style="color: white;">University College of Engineering, Thirukkuvalai</h1>
-                <h4 class="line2" style="color: white; font-size: large;">(A Constitutent College of Anna University::Chennai and Approved by AICTE, New Delhi)</h4>
-                <h5 class="line3" style="color: white; font-size: large;">THIRUKKUVALAI 601204 - NAGAPATTINAM</h5>
+                <h1>University College of Engineering, Thirukkuvalai</h1>
+                <h4>(A Constitutent College of Anna University::Chennai and Approved by AICTE, New Delhi)</h4>
+                <h5>THIRUKKUVALAI 601204 - NAGAPATTINAM</h5>
             </div>
         </div>
     </header>
@@ -232,7 +245,7 @@
             <h2 style="padding-top: 20px; text-align: center;">University College of Engineering Thirukkuvalai</h3>
         </div>
         <div>
-            <p class="content">University College of Engineering Thirukkuvalai(A Constituent College of Anna University , Chennai ) has been established by the Government of Tamil nadu in the year 2008 with four departments namely Civil Engineering, Computer science and engineering, Electronics and Communication Engineering, Mechanichal Engineering with an intake of 240 students This university campus, is a place for budding engineers to widen their technical knowledge through which they could enhance their innovative ideas by effectively accessing all available technical resources found inside the campus. This campus provides a great support to technical education by bringing in a number of well experienced experts from various disciplines as staff members. Most of the staff members here, being doctoral holders in their relative fields, are packed with information so that the students thirst for research is easily quenched.</p>
+            <p class="content " style="text-align: justify;">University College of Engineering Thirukkuvalai(A Constituent College of Anna University , Chennai ) has been established by the Government of Tamil nadu in the year 2008 with four departments namely Civil Engineering, Computer science and engineering, Electronics and Communication Engineering, Mechanichal Engineering with an intake of 240 students This university campus, is a place for budding engineers to widen their technical knowledge through which they could enhance their innovative ideas by effectively accessing all available technical resources found inside the campus. This campus provides a great support to technical education by bringing in a number of well experienced experts from various disciplines as staff members. Most of the staff members here, being doctoral holders in their relative fields, are packed with information so that the students thirst for research is easily quenched.</p>
         </div>
     </div>
 

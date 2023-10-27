@@ -13,25 +13,11 @@
             font-family: "Roboto Slab";
             overflow-x: hidden;
         }
-        .top-headder{
-            padding-left: 50px;
-            margin-bottom: -20px;
-        }
-        .logo{
-            padding: 30px;
-        }
-        .title{
-            padding-top: 25px;
-            padding-bottom: 25px;
-        }
 
         @media (max-width: 1021px) {
             .content-wrapper {
             flex-direction: column; /* Stack vertically on small screens */
             }
-        }
-        .line3{
-            padding: 5px;
         }
 
         /* Show the dropdown on hover */
@@ -63,13 +49,6 @@
         .line2, .line3 {
             display: none;
         }
-        .dean {
-            flex-direction: column;
-        }
-        .logo{
-            padding: 20px;
-            margin-left: -20px;
-        }
         }
         .up{
         position: relative;
@@ -96,21 +75,63 @@
         .bold-nav-link{
           font-size: 17px;
         }
+        .header{
+            background-color: #1C2B4B;
+            justify-content: center;
+        }
+
+        .title{
+            color: whitesmoke;
+            text-align: center;
+            margin: 20px 0px 20px 0px;
+        }
+
+        .title h1{
+            text-align: center;
+        }
+
+        .logo img{
+            height: 125px;
+            width: 125px;
+            margin: 20px 20px 20px 20px;
+        }
+
+        @media (max-width:991px) {
+            .title h4{
+                display: none;
+            }
+            .title h5{
+                display: none;
+            }
+            .logo img{
+                height: 125px;
+                width: 125px;
+            }
+            .logo{
+                padding: 20px 10px 20px 20px;
+            }
+            .title h1{
+                color: whitesmoke;
+                font-size: 30px;
+                margin-top: 7px;
+                padding-right: 20px;
+            }
+        }
     </style>
 </head>
 <body>
-    <header style="background-color: #1C2B4B;">
-        <div class="container d-flex top-headder">
-            <div class="logo">
-                <img src="../../media/logo/annaUniversityLogo.png" alt="UCE logo" style="height: 100px; width: 100px;">
-            </div>
-            <div class="title">
-                <h1 class="line1" style="color: white;">University College of Engineering, Thirukkuvalai</h1>
-                <h4 class="line2" style="color: white; font-size: large;">(A Constitutent College of Anna University::Chennai and Approved by AICTE, New Delhi)</h4>
-                <h5 class="line3" style="color: white; font-size: large;">THIRUKKUVALAI 601204 - NAGAPATTINAM</h5>
-            </div>
+  <header>
+    <div class="d-flex header">            
+        <div class="logo">
+            <img src="/media/logo/annaUniversityLogo.png" alt="UCE logo">
         </div>
-    </header>
+        <div class="title">
+            <h1>University College of Engineering, Thirukkuvalai</h1>
+            <h4>(A Constitutent College of Anna University::Chennai and Approved by AICTE, New Delhi)</h4>
+            <h5>THIRUKKUVALAI 601204 - NAGAPATTINAM</h5>
+        </div>
+    </div>
+</header>
     <nav class="navbar navbar-expand-lg" style="background-color:#95A3B3;">
         <div class="container">
             <a href="../../index.html" class="navbar-brand bold-nav-link">UCETKY</a>
@@ -167,12 +188,12 @@
                 <li class="nav-item dropdown">
                     <a href="" class="nav-link dropdown-toggle bold-nav-link" id="navbarDropdown-downloads" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Downloads</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown-downloads">
-                        <a href="/webDevelopment/UCE/media/downloads/Bonafied_Certificate.pdf" target="_blank" class="dropdown-item">Bonafide</a>
-                        <a href="/webDevelopment/UCE/media/downloads/NoDueCertificate.pdf" target="_blank" class="dropdown-item">No Due</a>
-                        <a href="/webDevelopment/UCE/media/downloads/leaveform.pdf" target="_blank" class="dropdown-item">Leave Form</a>
-                        <a href="/webDevelopment/UCE/media/downloads/WIFI-FORM STUDENT.pdf" target="_blank" class="dropdown-item">WIFI form</a>
-                        <a href="/webDevelopment/UCE/media/downloads/attendence.pdf" target="_blank" class="dropdown-item">Attendence Certificate For Transfer Students</a>
-                        <a href="/webDevelopment/UCE/media/downloads/Hostel_Caution_Deposit_Refund_Form.pdf" target="_blank" class="dropdown-item">Hostel Caution Deposit Refund Form</a>
+                        <a href="../../media/downloads/Bonafied_Certificate.pdf" target="_blank" class="dropdown-item">Bonafide</a>
+                        <a href="../../media/downloads/NoDueCertificate.pdf" target="_blank" class="dropdown-item">No Due</a>
+                        <a href="../../media/downloads/leaveform.pdf" target="_blank" class="dropdown-item">Leave Form</a>
+                        <a href="../../media/downloads/WIFI-FORM STUDENT.pdf" target="_blank" class="dropdown-item">WIFI form</a>
+                        <a href="../../media/downloads/attendence.pdf" target="_blank" class="dropdown-item">Attendence Certificate For Transfer Students</a>
+                        <a href="../../media/downloads/Hostel_Caution_Deposit_Refund_Form.pdf" target="_blank" class="dropdown-item">Hostel Caution Deposit Refund Form</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">

@@ -1,175 +1,258 @@
 body{
-    font-family: "Roboto Slab";
-    overflow-x: hidden;
+  font-family: "Roboto Slab";
+  overflow-x: hidden;
 }
 
 .bold-nav-link{
   font-size: 17px;
 }
 
-.top-headder{
-  padding-left: 50px;
-  margin-bottom: -20px;
-}
-
-
-.logo {
-    padding: 30px;
+.header{
+  background-color: #1C2B4B;
+  justify-content: center;
 }
 
 .title{
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-@media (max-width: 1021px) {
-  .content-wrapper {
-    flex-direction: column; /* Stack vertically on small screens */
-  }
+  color: whitesmoke;
+  text-align: center;
+  margin: 0px 0px 20px 0px;
 }
 
 
-/* Show the dropdown on hover */
+.logo img{
+  height: 125px;
+  width: 125px;
+  margin: 20px 20px -20px 20px;
+}
+
+
+
+.heading span{
+  background-color: #1C2B4B;
+  border-radius: 5px;
+}
+
 @media (min-width: 992px) {
   .navbar-nav .nav-item.dropdown .dropdown-menu {
-      display: none;
+    display: none;
   }
   
   .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
-      display: block;
-      position: absolute;
-      z-index: 1000;
+    display: block;
+    position: absolute;
+    z-index: 1000;
+  }
+
+  .newsAndUpdates{
+    display: none;
+  }
+
+  .courseOffered .courses-heading{
+    text-align: start !important;
+  }
+  .rlcardsmob{
+    display: none !important;
+  }
+  .courseOffered-mob{
+    display: none;
   }
 }    
 
-.content-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: stretch;
-  width: 100%;
-  max-width: 1200px; /* Adjust the maximum width as needed */
-}
-
-@media (max-width: 991px){
-  .content-wrapper{
-    flex-direction: column;
-  }
-}
-.aboutcollege {
-  flex: 3;
-  padding: 20px;
-  font-size: 21px;
-  border: 0px;
-  animation-name: homepara;
-  animation-duration: 1s;
-  animation-delay: 0.5s;
-  /* Add styling for aboutcollege */
-}
-
-@keyframes homepara {
-  0%{
-      position: relative;
-      opacity: 0;
-      top: 100px;
-  }
-  100%{
-      position: relative;
-      opacity: 1;
-      top: 0px;
-  }
-}
-
-.newsandupdates{
-  flex: 1;
-  padding: 20px;
-  font-size: 18px;
-  /* Add styling for newsandupdates */
-}
-
-.custom-card{
-max-height: 450px;
-overflow: hidden;
-}
-
-.scrollable-content{
-height: 100%;
-overflow: auto;
-}
-
-.course-container {
-    display: flex;
-    flex: row;
-    justify-content: center;
-}
 @media (max-width: 991px) {
-  .course-wrapper img{
+  body{
+    overflow-x: hidden !important;
+  }
+  .seperator{
     display: none;
+  }
+
+  .aboutAndMarqee {
+    flex-direction: column !important;
+  }
+
+  .classImg img{
+    display: none;
+  }
+  .aboutAndMarqee{
+    gap: 0px;
+  }
+  .title h4{
+    display: none;
+  }
+  .title h5{
+    display: none;
+  }
+  .logo img{
+    height: 125px;
+    width: 125px;
   }
   .logo{
-    margin-left: -30px;
-    }
-  .course-wrapper{
-    size: 20px;
-    padding-right:px;
+    padding: 20px 10px 20px 20px;
   }
-  .content-wrapper h4{
-    text-align: center;
+  .title h1{
+    color: whitesmoke;
+    font-size: 30px;
+    margin-top: 7px;
+    padding-right: 20px;
   }
-  .course-wrapper h2{
-    text-align: center;
-    padding-right: 70px;
+  .rlcards{
+    display: none !important;
   }
-  .line2, .line3 {
-    display: none;
+  .thingsthing{
+    flex-direction: column;
   }
-
+  .apj.up{
+    margin:0px auto !important;
+    justify-content: center;
+  }
+  .courseOffered{
+    display: none !important;
+  }
+  
 }
 
-.course-container{
-  text-align: left;
-}
 
-.course-wrapper h1,h4{
-  padding-bottom: 20px;
-}
-
-.course-wrapper{
-  display: flex;
-  flex-direction: row;
-  gap: 75px;
-}
-
-.course-wrapper span, .newsandupdates span, .links span, .apj .thingsHeading{
+h2 span{
   background-color: #1C2B4B;
   border-radius: 5px;
   padding: 10px;
   color: whitesmoke;
 }
-.courses-heading{ 
-  padding-bottom: 20px;
-}
-
-.rlheading{
-  padding: 30px 0px 30px 0px;
+h2{
+  padding: 30px 0px 0px 0px;
   text-align: center;
 }
 
-.link-card {
+h1{
+  padding: 30px 0px 10px 0px;
+  text-align: center;
+}
+
+.content{
+  font-size: 20px;
+  padding-top: 10px;
+  text-indent: 2em;
+  text-align: justify;
+}
+
+.markqueebox{
+  height: 350px;
+  max-width: auto;
+  margin: 0px auto 0px auto!important;
+  justify-content: center !important;
+}
+
+.newsAndUpdates{
+  margin-bottom: 20px;
+}
+
+.markqueebox p{
+  text-align: center;
+}
+
+.aboutcollege{
+  flex: 1;
+}
+
+.aboutAndMarqee{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.seperator{
+  height: 325px;
+  border: 2.5px solid #1C2B4B;
+  border-radius: 50%;
+}
+
+.courseOffered{
+  justify-content: space-around;
+  gap: 0px;
+  padding-left: 30px;
+}
+
+.classImg img{
+  max-width: 550px;
+  max-height: 550px;
+  margin-top: 20px;
+  padding-left: 50p;
+}
+
+.courses h3{
+  padding-top: 5px;
+  color: black;
+  text-align: start;
+}
+.courses-mob h3{
+  padding-top: 5px;
+  color: black;
+  text-align: start;
+  padding-left: 10px;
+}
+
+.courses a{
+  text-decoration: none;
+}
+.courses-mob a{
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+
+.courses .heading{
+  padding-bottom: 20px;
+}
+.courses-heading-mob{
+  padding-bottom: 20px;
+}
+
+.courses{
+  padding: 20px;
+}
+
+.courses-heading{
+  margin-bottom: 30px ;
+}
+
+.courses a img{
+  height: 40px;
+  width: 30px;
+}
+
+
+.link-card{
   height: 250px;
   width: 200px;
   border-radius: 5px;
   background: #ffffff;
   box-shadow: 15px 15px 30px #bebebe,
              -15px -15px 30px #ffffff;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
 }
-
 .link-card:hover{
   transform: scale(1.1);
 }
 
+.link-cardmob{
+  height: 100px;
+  width: 300px;
+  border-radius: 8px;
+  background: #ffffff;
+  /* background: #1C2B4B; */
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+  transition: transform 0.2s ease;
+}
+
+
 .rlcards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.rlcardsmob{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -182,128 +265,135 @@ overflow: auto;
   margin-left: 25px;
   padding: 0px 20px 50px 20px;
 }
+.link-cardmob img{
+  height: 65px;
+  width: 65px;
+}
+
+.insidecardmob{
+  padding-top: 17px;
+}
+
+.insidecardmob h2{
+  padding-top: 5px;
+}
+
 
 .link-card h4{
   padding-top: 30px;
   text-decoration: none;
+  color: #95A3B3;
+}
+.link-cardmob h3{
+  padding: 10px auto;
+  text-decoration: none;
+  color: #95A3B3;
 }
 
-@media (max-width: 491px) {
-  .related-link{
-    display: none;
+.rlheading{
+  padding-bottom: 40px;
+}
+
+.imgleft{
+  position: relative;
+  left: 7px;
+}
+
+.thingsHeading{
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+  .markqueebox {
+    float: right !important;
+
   }
 }
-.things{
-  padding: 20px;
-  display: flex;
+@media (max-width: 991px) {
+  .courses {
+    padding-left: 0 !important;
+    margin-left: -50px !important;
+  }
+  
 }
 
-.things h3 {
+
+.Theading span{
+  background-color: #1C2B4B;
+  border-radius: 5px;
   padding: 10px;
+  color: whitesmoke;
+  margin-top: 20px;
+}
+
+.things h3{
   text-align: center;
+  padding: 10px;
 }
 
-.counsellingNo{
-  font-size: 40px;
-  color:#1C2B4B;
+.things .list{
+  padding-top: 20px;
+  z-index: -1;
 }
-
-.things h2{
-  padding: 40px 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .apj{
-  display: flex;
-  justify-content: right;
-}
-
-.apj h1{
-  padding: 75px;
-} 
-
-.last-img{
-  width: 650px;
+  height: 350px;
+  width: 325px;
   z-index: -1;
-  margin-bottom: -35px;
+  justify-content: end;
+  margin-bottom: -1px;
 }
+
+@media (max-width:280px) {
+  .apj{
+    height: 250px!important;
+    width: 200px!important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #footer{
   background-color: #1C2B4B;

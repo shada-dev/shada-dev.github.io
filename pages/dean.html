@@ -13,25 +13,12 @@
             font-family: "Roboto Slab";
             overflow-x: hidden;
         }
-        .top-headder{
-            padding-left: 50px;
-            margin-bottom: -20px;
-        }
-        .logo{
-            padding: 30px;
-        }
-        .title{
-            padding-top: 25px;
-            padding-bottom: 25px;
-        }
+        
 
         @media (max-width: 1021px) {
             .content-wrapper {
             flex-direction: column; /* Stack vertically on small screens */
             }
-        }
-        .line3{
-            padding: 5px;
         }
 
         /* Show the dropdown on hover */
@@ -60,16 +47,6 @@
         .content-wrapper{
             flex-direction: column;
         }
-        .line2, .line3 {
-            display: none;
-        }
-        .dean {
-            flex-direction: column;
-        }
-        .logo{
-            padding: 20px;
-            margin-left: -20px;
-        }
         }
         .up{
         position: relative;
@@ -96,24 +73,64 @@
         .bold-nav-link{
           font-size: 17px;
         }
+
+        .header{
+            background-color: #1C2B4B;
+            justify-content: center;
+        }
+
+        .title{
+            color: whitesmoke;
+            text-align: center;
+            margin: 20px 0px 20px 0px;
+        }
+
+
+        .logo img{
+            height: 125px;
+            width: 125px;
+            margin: 20px 20px 20px 20px;
+        }
+
+        @media (max-width:991px) {
+            .title h4{
+                display: none;
+            }
+            .title h5{
+                display: none;
+            }
+            .logo img{
+                height: 125px;
+                width: 125px;
+            }
+            .logo{
+                padding: 20px 10px 20px 20px;
+            }
+            .title h1{
+                color: whitesmoke;
+                font-size: 30px;
+                margin-top: 7px;
+                padding-right: 20px;
+            }
+        }
     </style>
 </head>
 <body>
-    <header style="background-color: #1C2B4B;">
-        <div class="container d-flex top-headder">
+    <header>
+        <div class="d-flex header">            
             <div class="logo">
-                <img src="../../media/logo/annaUniversityLogo.png" alt="UCE logo" style="height: 100px; width: 100px;">
+                <img src="/media/logo/annaUniversityLogo.png" alt="UCE logo">
             </div>
             <div class="title">
-                <h1 class="line1" style="color: white;">University College of Engineering, Thirukkuvalai</h1>
-                <h4 class="line2" style="color: white; font-size: large;">(A Constitutent College of Anna University::Chennai and Approved by AICTE, New Delhi)</h4>
-                <h5 class="line3" style="color: white; font-size: large;">THIRUKKUVALAI 601204 - NAGAPATTINAM</h5>
+                <h1>University College of Engineering, Thirukkuvalai</h1>
+                <h4>(A Constitutent College of Anna University::Chennai and Approved by AICTE, New Delhi)</h4>
+                <h5>THIRUKKUVALAI 601204 - NAGAPATTINAM</h5>
             </div>
         </div>
     </header>
     <nav class="navbar navbar-expand-lg" style="background-color:#95A3B3;">
         <div class="container">
-            <a href="../../index.html" class="navbar-brand bold-nav-link">UCETKY</a>
+            <a href="../index.html" class="navbar-brand bold-nav-link">UCETKY</a>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand-Navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -125,19 +142,19 @@
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle bold-nav-link" id="navbarDropdown-about" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown-about">
-                        <a href="profile.html" class="dropdown-item">Profile</a>
-                        <a href="missionAndVission.html" class="dropdown-item">Mission and Vision</a>
+                        <a href="../pages/aboutus/profile.html" class="dropdown-item">Profile</a>
+                        <a href="../pages/aboutus/missionAndVission.html" class="dropdown-item">Mission and Vision</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="../dean.html" class="nav-link" >Dean's Desk</a>
+                    <a href="dean.html" class="nav-link" >Dean's Desk</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle bold-nav-link" id="navbarDropdown-studentneeds" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administration</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown-studentneeds">
-                        <a href="../administration/universityAdministration.html" class="dropdown-item">University Administration</a>
-                        <a href="../administration/collegeAdministration.html" class="dropdown-item">College Administration</a>
-                        <a href="../administration/unitOffice.html" class="dropdown-item">Unit Office</a>
+                        <a href="administration/universityAdministration.html" class="dropdown-item">University Administration</a>
+                        <a href="administration/collegeAdministration.html" class="dropdown-item">College Administration</a>
+                        <a href="administration/unitOffice.html" class="dropdown-item">Unit Office</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -154,11 +171,11 @@
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle bold-nav-link " id="navbarDropdown-studentActivites" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Student Activites</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown-studentActivites">
-                        <a href="../activities/nss.html" class="dropdown-item">NSS</a>
-                        <a href="../activities/rrc.html" class="dropdown-item">RRC</a>
-                        <a href="../activities/yrc.html" class="dropdown-item">YRC</a>
-                        <a href="../activities/sports.html" class="dropdown-item">Sports</a>
-                        <a href="../activities/antiRagging.html" class="dropdown-item">Anti Ragging</a>
+                        <a href="activities/nss.html" class="dropdown-item">NSS</a>
+                        <a href="activities/rrc.html" class="dropdown-item">RRC</a>
+                        <a href="activities/yrc.html" class="dropdown-item">YRC</a>
+                        <a href="activities/sports.html" class="dropdown-item">Sports</a>
+                        <a href="activities/antiRagging.html" class="dropdown-item">Anti Ragging</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -179,7 +196,7 @@
                     <a href="" class="nav-link bold-nav-link">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../contactus.html" class="nav-link bold-nav-link">ContactUs</a>
+                    <a href="contactus.html" class="nav-link bold-nav-link">ContactUs</a>
                 </li>
             </ul>
         </div>
@@ -245,7 +262,7 @@
               <br>  DEAN</h3>
         </div>
         <div>
-            <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo vero iusto expedita autem voluptatum, sint error quasi? Suscipit temporibus dolor magni cupiditate ex animi voluptatem quaerat reprehenderit in debitis ea velit sequi, natus, harum quis nostrum! Libero repellendus ex deserunt architecto ipsam maiores nostrum, aliquam illo nesciunt autem. Distinctio laudantium cupiditate quia, magni quis ut sunt impedit. Consequuntur a vero eius! Repudiandae, odit. Sunt rerum maiores cupiditate maxime sed, dolorum vel eveniet nostrum, ab molestiae sint asperiores, quisquam possimus doloremque ipsa accusantium aperiam ducimus delectus similique? Nam suscipit iure et, tenetur autem iusto architecto iste sint a, aut culpa quidem dicta obcaecati, fuga aperiam mollitia numquam maxime molestiae! Magni debitis fuga repudiandae perferendis odit fugit eaque ad accusamus aliquam nulla voluptates nisi libero placeat vitae beatae et, minus incidunt pariatur quae alias vel recusandae id vero facilis! Dolorem quia totam quibusdam nulla accusantium sunt! Deserunt totam voluptatum aut quis repudiandae voluptatem sunt quas, quam similique nesciunt. Eligendi rerum quod voluptates laborum suscipit possimus consequuntur sed dolorem. Itaque rem ea dolor quidem? Veniam aperiam sint dolor explicabo vel debitis aspernatur consequatur, earum vitae error non modi dolore ipsam enim exercitationem provident tenetur nam, doloremque repellendus molestias quas labore facilis. Voluptatum, sit.</p>
+            <p class="content" style="text-align: justify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo vero iusto expedita autem voluptatum, sint error quasi? Suscipit temporibus dolor magni cupiditate ex animi voluptatem quaerat reprehenderit in debitis ea velit sequi, natus, harum quis nostrum! Libero repellendus ex deserunt architecto ipsam maiores nostrum, aliquam illo nesciunt autem. Distinctio laudantium cupiditate quia, magni quis ut sunt impedit. Consequuntur a vero eius! Repudiandae, odit. Sunt rerum maiores cupiditate maxime sed, dolorum vel eveniet nostrum, ab molestiae sint asperiores, quisquam possimus doloremque ipsa accusantium aperiam ducimus delectus similique? Nam suscipit iure et, tenetur autem iusto architecto iste sint a, aut culpa quidem dicta obcaecati, fuga aperiam mollitia numquam maxime molestiae! Magni debitis fuga repudiandae perferendis odit fugit eaque ad accusamus aliquam nulla voluptates nisi libero placeat vitae beatae et, minus incidunt pariatur quae alias vel recusandae id vero facilis! Dolorem quia totam quibusdam nulla accusantium sunt! Deserunt totam voluptatum aut quis repudiandae voluptatem sunt quas, quam similique nesciunt. Eligendi rerum quod voluptates laborum suscipit possimus consequuntur sed dolorem. Itaque rem ea dolor quidem? Veniam aperiam sint dolor explicabo vel debitis aspernatur consequatur, earum vitae error non modi dolore ipsam enim exercitationem provident tenetur nam, doloremque repellendus molestias quas labore facilis. Voluptatum, sit.</p>
         </div>
     </div>
 
