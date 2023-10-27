@@ -1,3 +1,7 @@
+html{
+  overflow-x: hidden;
+}
+
 body{
   font-family: "Roboto Slab";
   overflow-x: hidden;
@@ -10,7 +14,7 @@ body{
 .header{
   background-color: #1C2B4B;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 
 .title{
@@ -117,6 +121,9 @@ body{
   
 }
 
+/* iphone se */
+
+
 
 h2 span{
   background-color: #1C2B4B;
@@ -146,6 +153,7 @@ h1{
   max-width: auto;
   margin: 0px auto 0px auto!important;
   justify-content: center !important;
+  border: 1px solid black;
 }
 
 .markqueebox{
