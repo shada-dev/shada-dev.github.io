@@ -250,9 +250,25 @@
         .mapcon{
             padding-bottom: 20px;
         }
+        .para{
+            animation-name: homepara;
+            animation-duration: 1s;
+            animation-delay: 0.5;
+        }
+
+        @keyframes homepara {
+        0%{
+            transform: translateY(150px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        }
     </style>
 
-    <div class="container d-flex flex-column">
+    <div class="container d-flex flex-column para">
         <div class="mapcon">
             <h1><span>Google Map</span></h1>
             <div class="ratio ratio-21x9 ">

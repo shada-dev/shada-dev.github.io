@@ -275,47 +275,70 @@
         .techstaffar{
             font-size: 18px;
         }    
+        .para{
+            animation-name: homepara;
+            animation-duration: 1s;
+            animation-delay: 0.5;
+        }
+
+        @keyframes homepara {
+        0%{
+            transform: translateY(150px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        }
+        
         }
         
     </style>
 
     <div class="container">
-        <h2><span>Anti-Ragging</span></h2>
-        <div class="noragging">
-            <a href="https://www.aucetk.edu.in/style/Anti%20Ragging%20Poster.pdf">
-                <img class="noragging" src="../../media/activites/antiRagging/anti-ragging.png" alt="">
+        <div class="para">
+            <h2><span>Anti-Ragging</span></h2>
+            <div class="noragging">
+                <a href="https://www.aucetk.edu.in/style/Anti%20Ragging%20Poster.pdf">
+                    <img class="noragging" src="../../media/activites/antiRagging/anti-ragging.png" alt="">
+                </a>
+            </div>
+            <a style="text-decoration: none;" href="https://www.aucetk.edu.in/style/Anti%20Ragging%20Poster.pdf">
+                <h3 style="color: red; text-align: center;">RAGGING IS TOTALLY PROHIBITED IN OUR CAMPUS</h3>
             </a>
+            <p class="content">
+                Ragging means display of noisy, disorderly conduct, doing any act which causes or is likely to cause physical or physiological harm or raise apprehension or fear or shame or Embarrassment to a student in any educational institution.
+            </p>
         </div>
-        <a style="text-decoration: none;" href="https://www.aucetk.edu.in/style/Anti%20Ragging%20Poster.pdf">
-            <h3 style="color: red; text-align: center;">RAGGING IS TOTALLY PROHIBITED IN OUR CAMPUS</h3>
-        </a>
-        <p class="content">
-            Ragging means display of noisy, disorderly conduct, doing any act which causes or is likely to cause physical or physiological harm or raise apprehension or fear or shame or Embarrassment to a student in any educational institution.
-        </p>
-        <h2><span>Forms of Ragging</span></h2>
-        <ol>
-            <li class="content">Display of noisy, disorderly conduct</li>
-            <li class="content">Abusing or playing practical jokes on, or causing hurt to a student</li>
-            <li class="content">Handling, including rowdy, undisciplined activities which raise apprehensive fear in a fresher</li>
-            <li class="content">Asking the students to do any act or perform something which causes him/her shame or embarrassment or danger to his/her life, etc.</li>
-            <li class="content">Teasing, excitement by rough or rude treatment</li>
-        </ol>
-        <h2><span>Punishment Includes</span></h2>
-        <ol>
-            <li class="content">Two years imprisonment.</li>
-            <li class="content">Fine to the tune of Rs.2.5 lakhs.</li>
-            <li class="content">Dismissal from the educational institution.</li>
-            <li class="content">Shall not be admitted in any other educational institution.</li>
-            <li class="content">Expulsion from the institution and debarring from admission to any other institution.</li>
-            <li class="content">Ousting from the institution for period ranging from one to four semesters.</li>
-            <li class="content">Withholding/withdrawing scholarship/fellowship and other benefits.</li>
-            <li class="content">Withholding results.</li>
-            <li class="content">Suspension from attending classes and academic privileges</li>
-        </ol>
-        <p class="content">In pursuance of the directions/decisions of Honurable Supreme Court of India, those who indulge in ragging can be punished with a Jail for period ranging from Six months to Ten years.</p>
-        <p class="content">Hence students, particularly the Seniors, are requested to refrain from any such criminal act. Juniors are requested to report about any ragging activity to the officials immediately without any fear.</p>
-        <h2 style="text-align: center;"><span>Anti Ragging Committee members</span></h2>
-        
+        <div class="up">
+            <h2><span>Forms of Ragging</span></h2>
+            <ol>
+                <li class="content">Display of noisy, disorderly conduct</li>
+                <li class="content">Abusing or playing practical jokes on, or causing hurt to a student</li>
+                <li class="content">Handling, including rowdy, undisciplined activities which raise apprehensive fear in a fresher</li>
+                <li class="content">Asking the students to do any act or perform something which causes him/her shame or embarrassment or danger to his/her life, etc.</li>
+                <li class="content">Teasing, excitement by rough or rude treatment</li>
+            </ol>    
+        </div>
+        <div class="up">
+            <h2><span>Punishment Includes</span></h2>
+            <ol>
+                <li class="content">Two years imprisonment.</li>
+                <li class="content">Fine to the tune of Rs.2.5 lakhs.</li>
+                <li class="content">Dismissal from the educational institution.</li>
+                <li class="content">Shall not be admitted in any other educational institution.</li>
+                <li class="content">Expulsion from the institution and debarring from admission to any other institution.</li>
+                <li class="content">Ousting from the institution for period ranging from one to four semesters.</li>
+                <li class="content">Withholding/withdrawing scholarship/fellowship and other benefits.</li>
+                <li class="content">Withholding results.</li>
+                <li class="content">Suspension from attending classes and academic privileges</li>
+            </ol>
+        </div>
+        <p class="content up">In pursuance of the directions/decisions of Honurable Supreme Court of India, those who indulge in ragging can be punished with a Jail for period ranging from Six months to Ten years.</p>
+        <p class="content up">Hence students, particularly the Seniors, are requested to refrain from any such criminal act. Juniors are requested to report about any ragging activity to the officials immediately without any fear.</p>
+        <div class="up">
+            <h2 style="text-align: center;"><span>Anti Ragging Committee members</span></h2>
         <div class="table-responsive-md table-custom">
             <table class="table table-primary table-hover">
                 <thead class="table-dark">
@@ -387,7 +410,9 @@
                 </tbody>
             </table>
         </div>
-        <h2 style="text-align: center;"  class="techstaffar"><span>Anti - Ragging Squad Members - Teaching Staffs</span></h2>
+        </div>
+        <div class="up">
+            <h2 style="text-align: center;"  class="techstaffar"><span>Anti - Ragging Squad Members - Teaching Staffs</span></h2>
         <p class="content">The squad members will have ligel, oversight and patrolling functions. The squad keeps alert and active at all times and shall inspect places of potential ragging and make surprise raids on hostels and other hotspots.</p>
         <div class="table-responsive-md table-custom">
             <table class="table table-primary table-hover">
@@ -475,7 +500,6 @@
                 </tbody>
             </table>
         </div>
-
         </div>
     </div>
 
@@ -595,7 +619,7 @@
             if (revealtop < windowheight - revealpoint) {
             reveals[i].classList.add('activateUp');
             } else {
-            reveals[i].classList.remove('activateUp');
+            //reveals[i].classList.remove('activateUp');
             }
         }
         }

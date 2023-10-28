@@ -116,6 +116,22 @@
                 padding-right: 20px;
             }
         }
+        .para{
+            animation-name: homepara;
+            animation-duration: 1s;
+            animation-delay: 0.5;
+        }
+
+        @keyframes homepara {
+        0%{
+            transform: translateY(150px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        }
     </style>
 </head>
 <body>
@@ -261,7 +277,7 @@
     </style>
 
     <div class="container">
-        <div>
+        <div class="para">
             <h1 style="padding: 20px 0px;"><span>Mission and Vision</span></h1>
             <img class="img" src="../../media/college/college.jpg" alt="">
             <h2 style="padding-top: 20px; text-align: center;">University College of Engineering Thirukkuvalai</h2>
@@ -271,7 +287,7 @@
                 <h3>Mission:</h3>
                 <p class="content">Anna University is to be a world class institution by producing professionals with high technical knowledge, professional skills and ethical values and remain as a preferred partner to the industry and community for their economic and social development through excellence in teaching, research and consultancy. Anna University shall be recognized as a point of reference, a catalyst, a facilitator, a trend setter and a leader in technical education.</p>
             </div>
-            <div class="vision">
+            <div class="up">
                 <h3>Vision:</h3>
                 <p class="content">Anna University shall contribute to the educational, economic and social development by:</p>
                 <ul class="list">
@@ -391,6 +407,22 @@
     </footer>
 
     <script>
+        window.addEventListener('DOMContentLoaded', function () {
+        // Get the elements you want to add the class to by using a class selector
+        var elements = document.querySelectorAll('.mission'); // Use the class selector '.strater'
+
+        // Check the screen width
+        if (window.innerWidth >= 768) {
+            // Loop through the elements and add the class to each one
+            elements.forEach(function (element) {
+                element.classList.add('up');
+            });
+        }else{
+            elements.forEach(function (element){
+                element.classList.add('para')
+            });
+        }
+    });
         window.addEventListener('scroll', up);
 
         function up() {
@@ -404,7 +436,7 @@
             if (revealtop < windowheight - revealpoint) {
             reveals[i].classList.add('activateUp');
             } else {
-            reveals[i].classList.remove('activateUp');
+            //reveals[i].classList.remove('activateUp');
             }
         }
         }

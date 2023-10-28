@@ -249,28 +249,44 @@
         .box p{
             font-size: 18px;
         }
+        .para{
+            animation-name: homepara;
+            animation-duration: 1s;
+            animation-delay: 0.5;
+        }
+
+        @keyframes homepara {
+        0%{
+            transform: translateY(150px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        }
     </style>
 
     <div class="container">
-        <div>
+        <div class="para">
             <h2><span>About NSS</span></h2>
             <p class="content">National service scheme popularly called as NSS is an Indian Government-Sponsored, public service program conducted by the Department of Youth Affairs and sports of the Government of India. NSS was started on the Gandhiji’s Centenary year, 1969. Aimed to improve the student’s personality towards community service. NSS is a voluntary of student’s at Colleges, Universities and at +2 Grade level integrating the Campus & Community. The Cardinal principle of NSS is that Student’s themselves involve in organising the programme, Teachers and students work together in the task of nation building.</p>    
         </div>
-        <div>
+        <div class="para">
             <h2><span>Motto</span></h2>
             <p class="content">Major motto of UCETK in NSS is that “Not me but you”, which offers the students with self-less behaviour. Explaining that the happiness of the individual lies only with the development of the society .UCETK has proved it by conducting many activities</p>
         </div>
-        <div class="outerbox">
+        <div class="outerbox up">
             <div class="box">
                 <h3 style="color: #FF1212; font-weight: 700;">Coordinator</h3>
                 <h4 style="font-weight: 800;">Mr.GaneshKumar.S</h4>
                 <p>Assistant Professor\English.</p>
             </div>
         </div>
-        <div>
+        <div class="up">
             <h2><span>Check out our NSS Gallery</span></h2>
         </div>
-        <div>
+        <div class="up">
             <h2><span>NSS Special Camp</span></h2>
         </div>
     </div>
@@ -391,7 +407,7 @@
             if (revealtop < windowheight - revealpoint) {
             reveals[i].classList.add('activateUp');
             } else {
-            reveals[i].classList.remove('activateUp');
+            //reveals[i].classList.remove('activateUp');
             }
         }
         }

@@ -214,6 +214,22 @@
         body{
             overflow-x: hidden;
         }
+        .para{
+            animation-name: homepara;
+            animation-duration: 1s;
+            animation-delay: 0.5;
+        }
+
+        @keyframes homepara {
+        0%{
+            transform: translateY(150px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        }
         h1 span{
             background-color: #1C2B4B;
             border-radius: 5px;
@@ -231,7 +247,7 @@
             color: whitesmoke;
         }
         h2{
-            padding: 30px 0px 0px 0px;
+            padding: 30px 0px 20px 0px;
             /* text-align: center; */
         }
         .rccLogo{
@@ -291,30 +307,30 @@
     </style>
 
     <div class="container">
-        <h2><span>Sports</span></h2>
-        <p class="content">Besides the academic activities Students would like together attention relieved and focused on fun and physique. Sports activities help the students to keep them fit both mentally and physically. The institution provides abundant facilities for the students to get accustomed with the varied sports activities like Basket Ball, Football , Hockey, Cricket, Throw ball, Ball-badminton, Kabbadi, Aesthetics, Kho-Kho, Volley Ball and indoor games like Badminton, Cress, Carom, Table Tennis and Weight-lifting. Our students know all the angles, to bring laurels to the college and themselves.
+        <h2 class="para"><span>Sports</span></h2>
+        <p class="content para">Besides the academic activities Students would like together attention relieved and focused on fun and physique. Sports activities help the students to keep them fit both mentally and physically. The institution provides abundant facilities for the students to get accustomed with the varied sports activities like Basket Ball, Football , Hockey, Cricket, Throw ball, Ball-badminton, Kabbadi, Aesthetics, Kho-Kho, Volley Ball and indoor games like Badminton, Cress, Carom, Table Tennis and Weight-lifting. Our students know all the angles, to bring laurels to the college and themselves.
         </p>
-        <h2><span>Achievements</span></h2>
+        <h2 class="para"><span>Achievements</span></h2>
         <ul>
-            <li class="licontent">Our students participate in 25 sports and games conducted by other colleges.</li>
-            <li class="licontent">More than 800 students are involved in sports activities inside campus.</li>
-            <li class="licontent">Zonal Kabbadi and Inter zonal Chess Tournaments are conducted in the campus.SA Trophy state level Intercollegiate end School level Tournaments for Basket Ball, Volley Ball & Table Tennis are organized in the college premises.</li>
-            <li class="licontent">SA Trophy state level Intercollegiate end School level Tournaments for Basket Ball, Volley Ball & Table Tennis are organized in the college premises.</li>
+            <li class="licontent up">Our students participate in 25 sports and games conducted by other colleges.</li>
+            <li class="licontent up">More than 800 students are involved in sports activities inside campus.</li>
+            <li class="licontent up">Zonal Kabbadi and Inter zonal Chess Tournaments are conducted in the campus.SA Trophy state level Intercollegiate end School level Tournaments for Basket Ball, Volley Ball & Table Tennis are organized in the college premises.</li>
+            <li class="licontent up">SA Trophy state level Intercollegiate end School level Tournaments for Basket Ball, Volley Ball & Table Tennis are organized in the college premises.</li>
         </ul>
-        <div class="outerbox">
+        <div class="outerbox up">
             <div class="boxpt">
                 <h3 style="color: #FF1212; font-weight: 700;">Physical Director</h3>
                 <h4 style="font-weight: 800;">Dr. Selvakumar .P</h4>
             </div>
-            <div class="box">
+            <div class="box ">
                 <h3 style="color: #FF1212; font-weight: 700;">COORDINATOR</h3>
                 <h4 style="font-weight: 800;">Mr.HariHaran.R</h4>
                 <p>Assistant Professor\ECE.</p>
             </div>
+        </div>
+        <div class="photos up">
+            <h2><span>Check out our Sports Gallery</span></h2>  
         </div>  
-        <h2><span>Check out our Sports Gallery</span></h2>  
-    </div>
-        <div>        
     </div>
 
         <!-- footer -->
@@ -433,7 +449,7 @@
             if (revealtop < windowheight - revealpoint) {
             reveals[i].classList.add('activateUp');
             } else {
-            reveals[i].classList.remove('activateUp');
+            //reveals[i].classList.remove('activateUp');
             }
         }
         }

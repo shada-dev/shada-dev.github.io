@@ -276,35 +276,56 @@
             .google{
             font-size: 18px;
         }
+        .para{
+            animation-name: homepara;
+            animation-duration: 1s;
+            animation-delay: 0.5;
+        }
+
+        @keyframes homepara {
+        0%{
+            transform: translateY(150px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        }
         }
         
 
     </style>
 
     <div class="container">
-        <p class="rrchead"><span>RED RIBBON CLUB <img src="../../media/activites/rrc/red-ribbon.png" style="height: 40px; width: 40px; position: relative; top: -5px;" alt=""></span></p>
-        <div class="rccLogo">
-            <img src="../../media/activites/rrc/rrc-logo.png" alt="">
+        <div class="para">
+            <p class="rrchead"><span>RED RIBBON CLUB <img src="../../media/activites/rrc/red-ribbon.png" style="height: 40px; width: 40px; position: relative; top: -5px;" alt=""></span></p>
+            <div class="rccLogo">
+                <img src="../../media/activites/rrc/rrc-logo.png" alt="">
+            </div>
+            <h2 class="quoites">“PREVENTION IS BETTER THAN CURE ; ESPECIALLY WHEN SOMETHING HAS NO CURE” & “DON’T LOSE YOUR LIFE - STAY AWAY FROM HIV”</h2>
+            <div>
+                <p class="content">RED RIBBON <img src="../../media/activites/rrc/red-ribbon.png" style="height: 30px; width: 30px; position: relative; top: -5px;" alt=""> globally recognized symbol for HIV/AIDS awareness. 1st of December is observed as World AIDS Day.
+                    In 1991 RED RIBBON CLUB was an important initiative undertaken by the Government of India</p>
+                <p class="content">To spread awareness about HIV/AIDS and associated myths among the youth and empower them as per educators.</p>
+                <p class="content">Voluntary blood donation.</p>
+                <p class="content">The club also works towards promotion of life skills to bring about behavioural change among the youth.</p>
+            </div>
         </div>
-        <h2 class="quoites">“PREVENTION IS BETTER THAN CURE ; ESPECIALLY WHEN SOMETHING HAS NO CURE” & “DON’T LOSE YOUR LIFE - STAY AWAY FROM HIV”</h2>
-        <div>
-            <p class="content">RED RIBBON <img src="../../media/activites/rrc/red-ribbon.png" style="height: 30px; width: 30px; position: relative; top: -5px;" alt=""> globally recognized symbol for HIV/AIDS awareness. 1st of December is observed as World AIDS Day.
-                In 1991 RED RIBBON CLUB was an important initiative undertaken by the Government of India</p>
-            <p class="content">To spread awareness about HIV/AIDS and associated myths among the youth and empower them as per educators.</p>
-            <p class="content">Voluntary blood donation.</p>
-            <p class="content">The club also works towards promotion of life skills to bring about behavioural change among the youth.</p>
+        <div class="up">
+            <h2><span>OBJECTIVES</span></h2>
+            <ul>
+                <br>
+                <li class="content">Educate youth with correct, concise and adequate information and heighten their level of awareness about HIV/AIDS, STI and other related issues (thus eliminate myths and misconceptions).</li>
+                <li class="content">Enable youth to identify and understand situations of exploitation and abuse.</li>
+                <li class="content">Sensitize the youth regarding care and support needs of people affected with HIV AIDS and instill in them the spirit to reduce the stigma and discrimination against them.</li>
+                <li class="content">Create and train the youth a cadre of peer educators for spreading awareness about HIV-AIDS and its prevention in the community</li>
+                <li class="content">Awareness on sexual reproductive health.</li>
+                <li class="content">Encourage blood donations.</li>
+            </ul>
         </div>
-        <h2><span>OBJECTIVES</span></h2>
-        <ul>
-            <br>
-            <li class="content">Educate youth with correct, concise and adequate information and heighten their level of awareness about HIV/AIDS, STI and other related issues (thus eliminate myths and misconceptions).</li>
-            <li class="content">Enable youth to identify and understand situations of exploitation and abuse.</li>
-            <li class="content">Sensitize the youth regarding care and support needs of people affected with HIV AIDS and instill in them the spirit to reduce the stigma and discrimination against them.</li>
-            <li class="content">Create and train the youth a cadre of peer educators for spreading awareness about HIV-AIDS and its prevention in the community</li>
-            <li class="content">Awareness on sexual reproductive health.</li>
-            <li class="content">Encourage blood donations.</li>
-        </ul>
-        <h2><span>PROGRAM CONDUCTED</span></h2>
+        <div class="up">
+            <h2><span>PROGRAM CONDUCTED</span></h2>
         <div>
             <div class="table-responsive-md table-custom">
                 <table class="table table-hover table-primary">
@@ -343,9 +364,11 @@
                 </table>
             </div>
         </div>
-        <p class="con">CONTACT: rrcucetky@gmail.com</p>
-        <p class="google">GOOGLE FORM LINK: <a href="https://forms.gle/yWgZoG2aEV6Cf5kV9">https://forms.gle/yWgZoG2aEV6Cf5kV9</a></p>
-        <div class="outerbox">
+            <p class="con ">CONTACT: rrcucetky@gmail.com</p>
+            <p class="google">GOOGLE FORM LINK: <a href="https://forms.gle/yWgZoG2aEV6Cf5kV9">https://forms.gle/yWgZoG2aEV6Cf5kV9</a></p>
+        </div>
+        
+        <div class="outerbox up">
             <div class="box">
                 <h3 style="color: #FF1212; font-weight: 700;">COORDINATOR</h3>
                 <h4 style="font-weight: 800;">Dr. A. JANAKI RAMYA</h4>
@@ -472,7 +495,7 @@
             if (revealtop < windowheight - revealpoint) {
             reveals[i].classList.add('activateUp');
             } else {
-            reveals[i].classList.remove('activateUp');
+            //reveals[i].classList.remove('activateUp');
             }
         }
         }

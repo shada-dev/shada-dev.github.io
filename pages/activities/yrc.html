@@ -116,6 +116,22 @@
                 padding-right: 20px;
             }
         }
+        .para{
+            animation-name: homepara;
+            animation-duration: 1s;
+            animation-delay: 0.5;
+        }
+
+        @keyframes homepara {
+        0%{
+            transform: translateY(150px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        }
     </style>
 </head>
 <body>
@@ -270,31 +286,37 @@
     </style>
 
     <div class="container">
-        <h1 style="color: red; text-align: center; font-size: 40px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">YOUTH RED CROSS</h1>
-        <h2><span>About YRC</span></h2>
-        <p class="content">The Red Cross Society is a worldwide, well known, universally accepted, admired and internationally identified humanitarian service organisation. It is the biggest, independent non-religious, non-political, non-sectarian and voluntary relief organisation treating people equally all over the world without any discrimination as to their nationality race and religion beliefs. It was established in 1863 in Geneva, Switzerland. The Father of Red Cross movement and recipient of noble award for peace in 1901 was “Jean Henry Dunant”, who was a successful businessman. While going on a business mission, Dunant came on 24th June 1859 to Castiglione. It was on the same day, the battle of Solferino was fought nearby between French and Austrian armies. Dunant was horrified and moved by the sight and plight of the wounded soldiers. On witnessing the pathetic scene he forgot his business and started relief operations to all the wounded soldiers without any discrimination taking the help from people in villages nearby. In 1862 Dunant wrote a book “A memory of Solferino” which paved the way for the first Geneva Conference in 26th October 1863.The Geneva Society for Public Welfare, consider the Dunant’s proposals which was mentioned in the book and convene a multinational conference for implementing them.</p>
-        <h2><span>Proposals</span></h2>
+        <h1 class="para" style="color: red; text-align: center; font-size: 40px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">YOUTH RED CROSS</h1>
+        <h2 class="para"><span>About YRC</span></h2>
+        <p class="content para">The Red Cross Society is a worldwide, well known, universally accepted, admired and internationally identified humanitarian service organisation. It is the biggest, independent non-religious, non-political, non-sectarian and voluntary relief organisation treating people equally all over the world without any discrimination as to their nationality race and religion beliefs. It was established in 1863 in Geneva, Switzerland. The Father of Red Cross movement and recipient of noble award for peace in 1901 was “Jean Henry Dunant”, who was a successful businessman. While going on a business mission, Dunant came on 24th June 1859 to Castiglione. It was on the same day, the battle of Solferino was fought nearby between French and Austrian armies. Dunant was horrified and moved by the sight and plight of the wounded soldiers. On witnessing the pathetic scene he forgot his business and started relief operations to all the wounded soldiers without any discrimination taking the help from people in villages nearby. In 1862 Dunant wrote a book “A memory of Solferino” which paved the way for the first Geneva Conference in 26th October 1863.The Geneva Society for Public Welfare, consider the Dunant’s proposals which was mentioned in the book and convene a multinational conference for implementing them.</p>
+        <div class="up">
+            <h2 class=""><span>Proposals</span></h2>
         <ul>
-            <li class="licontent">Formation of trained medical relief team in every country in peace time to be employed in the relief work for wounded soldiers in the battle field.</li>
-            <li class="licontent">Framing of rules to alleviate the suffering of war victims and to have international treaty among the nations once agreed upon and satisfied might assure humane care for wounded.</li>
+            <li class="licontent ">Formation of trained medical relief team in every country in peace time to be employed in the relief work for wounded soldiers in the battle field.</li>
+            <li class="licontent ">Framing of rules to alleviate the suffering of war victims and to have international treaty among the nations once agreed upon and satisfied might assure humane care for wounded.</li>
         </ul>
-        <div class="d-flex flex-column">
-            <h2 style="text-align: center;"><span>Father of Red Cross</span></h2>
-            <img class="henryimg" src="../../media/activites/yrc/henry.jpg" alt="">
-            <h4 style="text-align: center;">JEAN HENRY DUNANT</h4>
-            <p class="content">
-                Based on the proposals a resolution for the formation of medical relief societies “ Society for the relief of wounded combatants” was passed and the Red Cross Emblem to protect the members of Relief team was adopted. The name was changed subsequently in the year 1867 as “Red Cross Society” by Netherland. In 1875 the five member commission of the Geneva Society for Public Welfare began to call itself the International Committee of Red Cross (ICRC). In 1876 Muslim countries adopted Red Crescent on white background instead of Red Cross. The Red Cross Societies in times of peace pursue a variety of activities devoted to the health, safety and well being of the people, with the best relationship, understanding and cooperation between many governments and their national societies. The involvement and contribution of young people to the work of the Red Cross has an interesting history.This genesis of their engagement originated in the province of Quebec,when school children first participated in the humanitarian work of the Red Cross work by making bandages, dressings and other comforts for soldiers. The idea soon spread to Europe, United States Australia, Italy, Bulgaria, Czechoslovakia, Hungary, New Zealand, Poland, Switzerland, United Kingdom and Yugoslavia France, Japan, Romania and Sweden in short duration . In 1922, the youth programme of the Red Cross was officially recognized and supported by Resolution No. XVIII adopted by the General Council of League of Red Cross Societies and the expansion of Red Cross youth programmes to young people outside the schools or other than those attending educational institution were embodied in one of the General Councils resolutions XIX. The Red Cross, through its junior and youth programmes, plays an important role in channelling and guiding this young energy in the cause of humanitarian action. The following lines throw the glimpse of youth red cross.
-            </p>
-            <h2><span>Purpose of YRC</span></h2>
-            <ul>
-                <li class="licontent">Informing youth members and others the role and the responsibilities of the Red Cross and encourage them to contribute</li>
-                <li class="licontent">An awareness on the care of their own health and that of others</li>
-                <li class="licontent">The understanding and acceptance of civic responsibilities and acting accordingly with humanitarian concern, to fulfill the same</li>
-                <li class="licontent">To enable the growth and development of a spirit of service and sense of duty with dedication and devotion in the minds of youth</li>
-                <li class="licontent">To foster better friendly relationship with all without any discrimination</li>
-            </ul>
         </div>
-        <div class="outerbox">
+        <div class="d-flex flex-column">
+            <div class="up d-flex flex-column">
+                <h2 class="" style="text-align: center;"><span>Father of Red Cross</span></h2>
+                <img class="henryimg" src="../../media/activites/yrc/henry.jpg" alt="">
+                <h4 class="" style="text-align: center;">JEAN HENRY DUNANT</h4>
+                <p class="content">
+                    Based on the proposals a resolution for the formation of medical relief societies “ Society for the relief of wounded combatants” was passed and the Red Cross Emblem to protect the members of Relief team was adopted. The name was changed subsequently in the year 1867 as “Red Cross Society” by Netherland. In 1875 the five member commission of the Geneva Society for Public Welfare began to call itself the International Committee of Red Cross (ICRC). In 1876 Muslim countries adopted Red Crescent on white background instead of Red Cross. The Red Cross Societies in times of peace pursue a variety of activities devoted to the health, safety and well being of the people, with the best relationship, understanding and cooperation between many governments and their national societies. The involvement and contribution of young people to the work of the Red Cross has an interesting history.This genesis of their engagement originated in the province of Quebec,when school children first participated in the humanitarian work of the Red Cross work by making bandages, dressings and other comforts for soldiers. The idea soon spread to Europe, United States Australia, Italy, Bulgaria, Czechoslovakia, Hungary, New Zealand, Poland, Switzerland, United Kingdom and Yugoslavia France, Japan, Romania and Sweden in short duration . In 1922, the youth programme of the Red Cross was officially recognized and supported by Resolution No. XVIII adopted by the General Council of League of Red Cross Societies and the expansion of Red Cross youth programmes to young people outside the schools or other than those attending educational institution were embodied in one of the General Councils resolutions XIX. The Red Cross, through its junior and youth programmes, plays an important role in channelling and guiding this young energy in the cause of humanitarian action. The following lines throw the glimpse of youth red cross.
+                </p>
+            </div>
+            <div class="up">
+                <h2 class=""><span>Purpose of YRC</span></h2>
+            <ul>
+                <li class="licontent ">Informing youth members and others the role and the responsibilities of the Red Cross and encourage them to contribute</li>
+                <li class="licontent ">An awareness on the care of their own health and that of others</li>
+                <li class="licontent ">The understanding and acceptance of civic responsibilities and acting accordingly with humanitarian concern, to fulfill the same</li>
+                <li class="licontent ">To enable the growth and development of a spirit of service and sense of duty with dedication and devotion in the minds of youth</li>
+                <li class="licontent ">To foster better friendly relationship with all without any discrimination</li>
+            </ul>
+            </div>
+        </div>
+        <div class="outerbox up">
             <div class="box">
                 <h3 style="color: #FF1212; font-weight: 700;">COORDINATOR</h3>
                 <h4 style="font-weight: 800;">Dr.KalaiSelvan.A</h4>
@@ -419,7 +441,7 @@
             if (revealtop < windowheight - revealpoint) {
             reveals[i].classList.add('activateUp');
             } else {
-            reveals[i].classList.remove('activateUp');
+            //reveals[i].classList.remove('activateUp');
             }
         }
         }

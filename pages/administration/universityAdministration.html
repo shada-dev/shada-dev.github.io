@@ -225,9 +225,25 @@
                 color: #1C2B4B;
             }
         }
+        .para{
+            animation-name: homepara;
+            animation-duration: 1s;
+            animation-delay: 0.5;
+        }
+
+        @keyframes homepara {
+        0%{
+            transform: translateY(150px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        }
     </style>
 
-    <div class="container">
+    <div class="container para">
         <div class="theading">
             <h1><span>UNIVERSITY ADMINISTRATION</span></h1>
         </div>
@@ -382,7 +398,7 @@
             if (revealtop < windowheight - revealpoint) {
             reveals[i].classList.add('activateUp');
             } else {
-            reveals[i].classList.remove('activateUp');
+            //reveals[i].classList.remove('activateUp');
             }
         }
         }
