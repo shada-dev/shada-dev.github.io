@@ -62,6 +62,9 @@ body{
   .courseOffered-mob{
     display: none;
   }
+  .slide-mob{
+    display: none;
+  }
 }    
 
 @media (max-width: 991px) {
@@ -85,12 +88,6 @@ body{
   .header h1{
     position: relative;
     top: 15px;
-  }
-  .title h4{
-    display: none;
-  }
-  .title h5{
-    display: none;
   }
   .logo img{
     height: 125px;
@@ -118,11 +115,36 @@ body{
   .courseOffered{
     display: none !important;
   }
-  
+  .slide-lg{
+    display: none;
+  }
 }
 
-/* iphone se */
+@media (max-width:860px) {
+  .title h4{
+    display: none;
+  }
+  .title h5{
+    display: none;
+  }
+}
 
+.para{
+  animation-name: homepara;
+  animation-duration: 1s;
+  animation-delay: 0.5;
+}
+
+@keyframes homepara {
+  0%{
+    transform: translateY(150px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 
 
 h2 span{
@@ -153,7 +175,6 @@ h1{
   max-width: auto;
   margin: 0px auto 0px auto!important;
   justify-content: center !important;
-  border: 1px solid black;
 }
 
 .markqueebox{

@@ -1,40 +1,15 @@
 
-//slid-show
-$(document).ready(function () {
-  // Initialize the carousel
-  $('#carouselExampleIndicators').carousel();
+function startTicker() {
+  const newsTicker = document.querySelector('.news-ticker ul');
+  const newsItems = document.querySelectorAll('.news-ticker li');
+  let currentIndex = 0;
 
-  // Set the interval for automatic sliding (in milliseconds)
-  var interval = 50; // Change this value to adjust the interval
-
-  // Start the automatic slide show
-  var slideInterval = setInterval(function () {
-    $('#carouselExampleIndicators').carousel('next');
-  }, interval);
-
-  // Pause the slide show when the mouse hovers over the carousel
-  $('#carouselExampleIndicators').on('mouseover', function () {
-    clearInterval(slideInterval);
-  });
-
-  // Resume the slide show when the mouse leaves the carousel
-  $('#carouselExampleIndicators').on('mouseleave', function () {
-    slideInterval = setInterval(function () {
-      $('#carouselExampleIndicators').carousel('next');
-    }, interval);
-  });
-});
-
-function stopMarquee() {
-  var marquee = document.getElementById("myMarquee");
-  marquee.stop();
+  setInterval(() => {
+      newsItems[currentIndex].style.opacity = '0';
+      currentIndex = (currentIndex + 1) % newsItems.length;
+      newsItems[currentIndex].style.opacity = '1';
+  }, 500); // Adjust the duration (in milliseconds) for each news item
 }
 
-function startMarquee() {
-  var marquee = document.getElementById("myMarquee");
-  marquee.start();
-}
-
-
-
-
+// Start the news ticker when the page loads
+window.addEventListener('load', startTicker);
