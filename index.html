@@ -66,11 +66,13 @@
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle bold-nav-link " id="navbarDropdown-studentActivites" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Student Activites</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown-studentActivites">
+                        <a href="pages/activities/alumini.html" class="dropdown-item">Alumini</a>
                         <a href="pages/activities/nss.html" class="dropdown-item">NSS</a>
                         <a href="pages/activities/rrc.html" class="dropdown-item">RRC</a>
                         <a href="pages/activities/yrc.html" class="dropdown-item">YRC</a>
                         <a href="pages/activities/sports.html" class="dropdown-item">Sports</a>
                         <a href="pages/activities/antiRagging.html" class="dropdown-item">Anti Ragging</a>
+                        <a href="pages/activities/discipline.html" class="dropdown-item">Discipline Rules</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -88,7 +90,7 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a href="" class="nav-link bold-nav-link">Gallery</a>
+                    <a href="pages/gallery.html" class="nav-link bold-nav-link">Gallery</a>
                 </li>
                 <li class="nav-item">
                     <a href="pages/contactus.html" class="nav-link bold-nav-link">ContactUs</a>
@@ -158,7 +160,7 @@
 
     <div class="container">
         <div class="head strater para">
-            <h1><span>WELCOME TO UNIVERSITY COLLEGE OF ENGINEERING</span></h1>
+            <h1 style="font-weight: 525;"><span>WELCOME TO UNIVERSITY COLLEGE OF ENGINEERING</span></h1>
         </div>
         <div class="d-flex flex-row justify-content-between aboutAndMarqee">
             <div class="aboutcollege strater para" >
@@ -170,7 +172,7 @@
             <div class="marquee up">
                 <h2 class="heading newsAndUpdates"><span>News and Updates</span></h2>
                 <div class="markqueebox">
-                    <marquee behavior="scroll" direction="up" style="height: 350px;">
+                    <marquee behavior="scroll" direction="up" style="height: 350px;" id="myMarquee" onmousemove="this.stop" onmousedown="this.stop()" onmouseover="this.stop()" onmouseout="this.start()">
                         <p><a href="https://www.aucetk.edu.in/index.html">This website is going to replace the old website<img style="height: 30px; width: 40px;" src="media/homeAssets/new.gif" alt=""></a></p>
                         <br>
                         <br>
@@ -208,13 +210,15 @@
         <div class="courseOffered-mob">
             <div class="courses-mob">
                 <h2 class="courses-heading-mob up"><span>Courses Offered</span></h2>
-                <a  href=""><h3 class="up"><img src="media/homeAssets/arrow5.png" alt="">B.E-Computer Science & Engineering</h3></a>
-                <a href=""><h3 class="up"><img src="media/homeAssets/arrow5.png" alt="">B.E-Electronics and Communication Engineering</h3></a>
-                <a href=""><h3 class="up"><img src="media/homeAssets/arrow5.png" alt="">B.E-Electrical & Electronics Engineering</h3></a>
-                <a href=""><h3 class="up"><img src="media/homeAssets/arrow5.png" alt="">B.E-Mechanical Engineering(English)</h3></a>
-                <a href=""><h3 class="up"><img src="media/homeAssets/arrow5.png" alt="">B.E-Mechanical Engineering(Tamil)</h3></a>
-                <a href=""><h3 class="up"><img src="media/homeAssets/arrow5.png" alt="">B.E-Civil Engineering(English)</h3></a>
-                <a href=""><h3 class="up"><img src="media/homeAssets/arrow5.png" alt="">B.E-Civil Engineering(Tamil)</h3></a>
+            <ul>
+                    <li class="up"><a href=""><h3>B.E-Computer Science & Engineering</h3></a></li>
+                    <li class="up"><a href=""><h3>B.E-Electronics and Communication Engineering</h3></a></li>
+                    <li class="up"><a href=""><h3>B.E-Electrical & Electronics Engineering</h3></a></li>
+                    <li class="up"><a href=""><h3>B.E-Mechanical Engineering(English)</h3></a></li>
+                    <li class="up"><a href=""><h3>B.E-Mechanical Engineering(Tamil)</h3></a></li>
+                    <li class="up"><a href=""><h3>B.E-Civil Engineering(English)</h3></a></li>
+                 <li class="up"><a href=""><h3>B.E-Civil Engineering(Tamil)</h3></a></li>
+            </ul>
             </div>
         </div>
 
@@ -228,7 +232,7 @@
                 <div class="link-card "><a style="text-decoration: none;" href=""><h4 style="text-align: center;">UCETKY - Web Team</h4><img src="media/related-links/team.png" alt="" ></a></div>
             </div>
             <div class="rlcardsmob d-flex">
-                <div class="link-cardmob up style="d-flex">
+                <div class="link-cardmob up d-flex">
                     <a style="text-decoration:none;" href="https://www.annauniv.edu/">
                         <div class="d-flex flex-row justify-content-around insidecardmob">
                             <img class="imgleft" src="media/related-links/Anna.jpg" alt="" >
@@ -236,7 +240,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="link-cardmob up" style="d-flex">
+                <div class="link-cardmob up d-flex">
                     <a style="text-decoration:none;" href="https://cfr.annauniv.edu/research/academics/index.php">
                         <div class="d-flex flex-row justify-content-around insidecardmob">
                             <img class="imgleft" src="media/related-links/reasearch.png" alt="" >
@@ -244,7 +248,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="link-cardmob  up" style="d-flex">
+                <div class="link-cardmob  up d-flex">
                     <a style="text-decoration:none;" href="https://cfr.annauniv.edu/research/academics/index.php">
                         <div class="d-flex flex-row justify-content-around insidecardmob">
                             <img src="media/related-links/aukdc.png" alt="" >
@@ -252,7 +256,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="link-cardmob up" style="d-flex">
+                <div class="link-cardmob up d-flex">
                     <a style="text-decoration:none;" href="https://cfr.annauniv.edu/research/academics/index.php">
                         <div class="d-flex flex-row justify-content-around insidecardmob">
                             <img class="imgleft" src="media/related-links/Anna.jpg" alt="" >
@@ -260,7 +264,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="link-cardmob up" style="d-flex">
+                <div class="link-cardmob up ">
                     <a style="text-decoration: none;" href="https://cfr.annauniv.edu/research/academics/index.php">
                         <div class="d-flex flex-row justify-content-around insidecardmob">
                             <img src="media/related-links/team.png" alt="" >
@@ -271,20 +275,28 @@
             </div>
             </div>
 
-            <div class="things d-flex flex-column">
-                <h2 class="heading up" style="margin-top: 20px;"><span>Things We Want To Share</span></h2>
-                <div class="d-flex justify-content-around thingsthing">
-                    <div class="list">
-                        <h3 class="up"><img src="media/homeAssets/counselling.png" alt="" style="height: 50px; padding: 5px;">Our counselling code is <span class="counsellingNo">3018</span></h3>
-                        <h3 class="up"><img src="media/homeAssets/teacher.png" alt="" style="height: 50px;  padding: 5px;">Qualified professors</h3>
-                        <h3 class="up"><img src="media/homeAssets/salary.png" alt="" style="height: 50px; padding: 5px;">Have scholarships</h3>
-                        <h3 class="up"><img src="media/homeAssets/affection.png" alt="" style="height: 50px; padding: 5px;">Ragging free society</h3>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <img class="apj up" src="media/homeAssets/apj.png" alt="">
+            <div class="up">
+                <h2 class="heading " style="margin-top: 20px;"><span>Things We Want To Share</span></h2>
+                <div class="things d-flex justify-content-around">
+                    <div class="d-flex justify-content-around thingsthing">
+                        <div class="list">
+                            <h3 class=""><img src="media/homeAssets/counselling.png" alt="" style="height: 50px; padding: 5px;">Our counselling code is <span class="counsellingNo">3018</span></h3>
+                            <h3 class=""><img src="media/homeAssets/teacher.png" alt="" style="height: 50px;  padding: 5px;">Qualified professors</h3>
+                            <h3 class=""><img src="media/homeAssets/salary.png" alt="" style="height: 50px; padding: 5px;">Have scholarships</h3>
+                            <h3 class=""><img src="media/homeAssets/affection.png" alt="" style="height: 50px; padding: 5px;">Ragging free society</h3>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <img class="apj" src="media/homeAssets/apj.png" alt="">
+                        </div>
                     </div>
                 </div>
+                <div class="separator1"></div>
+                <div class="w-75 d-flex flex-column g-0 m-auto ">
+                <p class="quote text-center ">" Man needs difficulties in life because they are necessary to enjoy success."</p>
+                <p class="text-center apjtext">-A. P. J. Abdul Kalam</p>
+                </div>
             </div>
+            
     </div>
 
 
@@ -321,16 +333,16 @@
                 Useful links
             </h5>
             <p>
-            <a href="../index.html" class="text-reset">Home</a>
+            <a href="index.html" class="text-reset">Home</a>
             </p>
             <p>
-            <a href="#!" class="text-reset">Dean's Desk</a>
+            <a href="pages/dean.html" class="text-reset">Dean's Desk</a>
             </p>
             <p>
-            <a href="#!" class="text-reset">Facilities</a>
+            <a href="" class="text-reset">Facilities</a>
             </p>
             <p>
-            <a href="#!" class="text-reset">Gallery</a>
+            <a href="pages/gallery.html" class="text-reset">Gallery</a>
             </p>
         </div>
         <!-- Grid column -->
@@ -342,16 +354,16 @@
                 Downloads
             </h5>
             <p>
-            <a href="#!" class="text-reset">Bonafide</a>
+            <a href="media/downloads/Bonafied_Certificate.pdf" class="text-reset">Bonafide</a>
             </p>
             <p>
-            <a href="#!" class="text-reset">No Due</a>
+            <a href="media/downloads/NoDueCertificate.pdf" class="text-reset">No Due</a>
             </p>
             <p>
-            <a href="#!" class="text-reset">Anti Ragging Application</a>
+            <a href="media/downloads/leaveform.pdf" class="text-reset">Leave Form</a>
             </p>
             <p>
-                <a href="#!" class="text-reset">On Duty Application</a>
+                <a href="media/downloads/Hostel_Caution_Deposit_Refund_Form.pdf" class="text-reset">Hostel Caution Deposit Refund Form</a>
             </p>
         </div>
         <!-- Grid column -->

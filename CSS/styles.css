@@ -203,6 +203,18 @@ h1{
   border: 2.5px solid #1C2B4B;
   border-radius: 50%;
 }
+.separator1{
+  height: 5px; 
+  background: #000;
+  border: none;
+  width: 80%;
+  margin: 10px auto;
+  border-radius: 50%;
+}
+
+.courses-mob ul{
+  /* list-style-image: url("../media/homeAssets/arrow4.png"); */
+}
 
 .courseOffered{
   justify-content: space-around;
@@ -277,7 +289,6 @@ h1{
   width: 300px;
   border-radius: 8px;
   background: #ffffff;
-  /* background: #1C2B4B; */
   box-shadow: 15px 15px 30px #bebebe,
              -15px -15px 30px #ffffff;
 }
@@ -365,13 +376,14 @@ h1{
 }
 
 .things h3{
-  text-align: center;
   padding: 10px;
 }
 
 .things .list{
   padding-top: 20px;
   z-index: -1;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .apj{
@@ -390,9 +402,14 @@ h1{
   }
 }
 
+.quote{
+  font-size: x-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-
-
+.apjtext{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 
 

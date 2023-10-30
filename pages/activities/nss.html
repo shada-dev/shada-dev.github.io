@@ -114,6 +114,10 @@
                 margin-top: 7px;
                 padding-right: 20px;
             }
+            
+            .nss{
+                font-size: 20px;        
+            }
         }
     </style>
 </head>
@@ -137,7 +141,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
                     <a href="../../index.html" class="nav-link bold-nav-link">HOME</a>
                 </li>
@@ -173,11 +177,13 @@
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle bold-nav-link " id="navbarDropdown-studentActivites" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Student Activites</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown-studentActivites">
+                        <a href="alumini.html" class="dropdown-item">Alumini</a>
                         <a href="nss.html" class="dropdown-item">NSS</a>
                         <a href="rrc.html" class="dropdown-item">RRC</a>
                         <a href="yrc.html" class="dropdown-item">YRC</a>
                         <a href="sports.html" class="dropdown-item">Sports</a>
                         <a href="antiRagging.html" class="dropdown-item">Anti Ragging</a>
+                        <a href="discipline.html" class="dropdown-item">Discipline Rules</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -195,7 +201,7 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a href="" class="nav-link bold-nav-link">Gallery</a>
+                    <a href="../gallery.html" class="nav-link bold-nav-link">Gallery</a>
                 </li>
                 <li class="nav-item">
                     <a href="../contactus.html" class="nav-link bold-nav-link">ContactUs</a>
@@ -223,17 +229,18 @@
             border-radius: 5px;
             padding: 10px;
             color: whitesmoke;
+            
         }
         h2{
             padding: 30px 0px 0px 0px;
             text-align: start;
         }
         .content{
-            padding: 20px;
+            padding: 0px 10px;
             font-size: 20px;
             text-align: justify;
         }
-        .box{
+        .box1{
             align-items: center;
             justify-content: center;
             flex-direction: column;
@@ -265,29 +272,255 @@
             opacity: 1;
         }
         }
+        .box{
+    background:#0e204d;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.box:hover{ box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+.box img{
+    width: 350px;
+    height: 250px;
+    transition: all .6s ease-in-out;
+}
+.box:hover img{
+    opacity: 0.4;
+    transform: scale(1.3);
+}
+.box .box-content{
+    color: #fff;
+    background: #0e204d;
+    width: 100%;
+    padding: 15px 15px 10px;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transition: all 0.4s ease-out;
+}
+.box:hover .box-content{ bottom: 0; }
+.box .title{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 3px;
+}
+.box .post{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+}
+.box .icon{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    opacity: 0;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transition: all 0.4s ease-out;
+}
+.box:hover .icon{ opacity: 1; }
+.box .icon li{
+    margin: 0 3px;
+    display: inline-block;
+    transition: all .5s ease-in-out;
+}
+.box .icon li:first-child{ transform: translateX( -100%) translateY(-100%); }
+.box .icon li:last-child{ transform: translateX( 100%) translateY(100%); }
+.box:hover .icon li{ transform: translateX(0) translateY(0); }
+.box .icon li a{
+    color: #fff;
+    background: #13c5dd;
+    font-size: 18px;
+    line-height: 39px;
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+    display: block;
+    transition: all .5s ease-in-out;
+}
+.box .icon li a:hover{
+    color: #0e204d;
+    background: #fff;
+}
+@media only screen and (max-width:990px){
+    .box{ margin: 0 0 30px; }
+}
+
+        img{
+            height: 250px;
+            width: 350px;
+            overflow: hidden;
+        }
+
+        
+        .box{
+            height: 250px;
+            width: 350px;
+            overflow: hidden;
+        }
+
+        .column{
+            margin-bottom: 20px;
+        }
+
+        .gallery{
+            gap: 30px;
+            justify-content: space-around;
+            margin: 20px auto;
+        }
+        .cardCaption{
+            margin-top: -20px;
+            text-align: center;
+            font-weight: 560;
+        }
+        @media (min-width:959px) {
+            .cardCaption{
+                display: none;
+            }
+        }
     </style>
 
     <div class="container">
         <div class="para">
-            <h2><span>About NSS</span></h2>
+            <h2 style="margin-bottom: 20px;"><span>About NSS</span></h2>
             <p class="content">National service scheme popularly called as NSS is an Indian Government-Sponsored, public service program conducted by the Department of Youth Affairs and sports of the Government of India. NSS was started on the Gandhiji’s Centenary year, 1969. Aimed to improve the student’s personality towards community service. NSS is a voluntary of student’s at Colleges, Universities and at +2 Grade level integrating the Campus & Community. The Cardinal principle of NSS is that Student’s themselves involve in organising the programme, Teachers and students work together in the task of nation building.</p>    
         </div>
         <div class="para">
-            <h2><span>Motto</span></h2>
+            <h2 style="margin-bottom: 20px;"><span>Motto</span></h2>
             <p class="content">Major motto of UCETK in NSS is that “Not me but you”, which offers the students with self-less behaviour. Explaining that the happiness of the individual lies only with the development of the society .UCETK has proved it by conducting many activities</p>
         </div>
         <div class="outerbox up">
-            <div class="box">
+            <div class="box1">
                 <h3 style="color: #FF1212; font-weight: 700;">Coordinator</h3>
                 <h4 style="font-weight: 800;">Mr.GaneshKumar.S</h4>
                 <p>Assistant Professor\English.</p>
             </div>
         </div>
         <div class="up">
-            <h2><span>Check out our NSS Gallery</span></h2>
+            <h2 class="text-center p-5 nss"><span>Check out our NSS Gallery</span></h2>
+            <div class="thumb d-flex flex-wrap justify-content-around">
+                <div class="column">
+                    <div class="box">
+                        <img src="../../media/activites/nss/gallery/blood.jpg">
+                        <div class="box-content">
+                            <h3 class="title">Blood Donation Camp</h3>
+                            <span class="post">2016-2017</span>
+                        </div>
+                        <ul class="icon">
+                            <a target="_blank" href="../gallery/blood.html"><button class="btn"  style="background-color: #84DCC6; color: black;">View More</button></a>
+                        </ul>
+                    </div>
+                    <h3 class="cardCaption">Blood Donation Camp</h3>
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <img src="../../media/activites/nss/gallery/vote.jpg">
+                        <div class="box-content">
+                            <h3 class="title">Vote ID Camp</h3>
+                            <span class="post">2016-2017</span>
+                        </div>
+                        <ul class="icon">
+                            <a target="_blank" href="../gallery/vote.html"><button class="btn" style="background-color: #84DCC6; color: black;">View More</button></a>
+                        </ul>
+                    </div>
+                    <h3 class="cardCaption">Vote ID Camp</h3>
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <img src="../../media/activites/nss/gallery/yoga.jpg">
+                        <div class="box-content">
+                            <h3 class="title">Yoga</h3>
+                            <span class="post">2016-2017</span>
+                        </div>
+                        <ul class="icon">
+                            <a target="_blank" href="../gallery/yoga.html"><button class="btn" style="background-color: #84DCC6; color: black;">View More</button></a>
+                        </ul>
+                    </div>
+                    <h3 class="cardCaption">Yoga</h3>
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <img src="../../media/activites/nss/gallery/plant.jpg">
+                        <div class="box-content">
+                            <h3 class="title">Plant Sampling</h3>
+                            <span class="post">2016-2017</span>
+                        </div>
+                        <ul class="icon">
+                            <a target="_blank" href="../gallery/plant.html"><button class="btn" style="background-color: #84DCC6; color: black;">View More</button></a><
+                        </ul>
+                    </div>
+                    <h3 class="cardCaption">Plant Sampling</h3>
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <img src="../../media/activites/nss/gallery/independence.jpg">
+                        <div class="box-content">
+                            <h3 class="title">Independence Day</h3>
+                            <span class="post">2016-2017</span>
+                        </div>
+                        <ul class="icon">
+                            <a target="_blank" href="../gallery/independence.html"><button class="btn" style="background-color: #84DCC6; color: black;">View More</button></a>
+                        </ul>
+                    </div>
+                    <h3 class="cardCaption">Independence Day</h3>
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <img src="../../media/activites/nss/gallery/karuvelam.jpg">
+                        <div class="box-content">
+                            <h3 class="title">Removal of karuvelam</h3>
+                            <span class="post">2016-2017</span>
+                        </div>
+                        <ul class="icon">
+                            <a target="_blank" href="../gallery/karuvelam.html"><button class="btn" style="background-color: #84DCC6; color: black;">View More</button></a>
+                        </ul>
+                    </div>
+                    <h3 class="cardCaption">Removal of karuvelam</h3>
+                </div>
+            </div>
         </div>
+
+
         <div class="up">
-            <h2><span>NSS Special Camp</span></h2>
+            <h2 class="text-center p-5"><span>NSS Special Camp</span></h2>
+            <div class="thumb d-flex flex-wrap justify-content-around">
+                <div class="column">
+                    <div class="box">
+                        <img src="../../media/activites/nss/gallery/camp0.jpg">
+                        <div class="box-content">
+                            <h3 class="title">NSS Special Camp</h3>
+                            <span class="post">2016-2017</span>
+                        </div>
+                        <ul class="icon">
+                            <a target="_blank" href="../gallery/camp0.html"><button class="btn"  style="background-color: #84DCC6; color: black;">View More</button></a>
+                        </ul>
+                    </div>
+                    <h3 class="cardCaption">2016-2017</h3>
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <img src="../../media/activites/nss/gallery/camp1.jpg">
+                        <div class="box-content">
+                            <h3 class="title">NSS Special Camp</h3>
+                            <span class="post">2015-2016</span>
+                        </div>
+                        <ul class="icon">
+                            <a target="_blank" href="../gallery/camp1.html"><button class="btn" style="background-color: #84DCC6; color: black;">View More</button></a>
+                        </ul>
+                    </div>
+                    <h3 class="cardCaption">2015-2016</h3>
+                </div>
+            </div>
         </div>
     </div>
 

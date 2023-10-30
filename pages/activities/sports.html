@@ -143,7 +143,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
                     <a href="../../index.html" class="nav-link bold-nav-link">HOME</a>
                 </li>
@@ -179,11 +179,13 @@
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle bold-nav-link " id="navbarDropdown-studentActivites" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Student Activites</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown-studentActivites">
+                        <a href="alumini.html" class="dropdown-item">Alumini</a>
                         <a href="nss.html" class="dropdown-item">NSS</a>
                         <a href="rrc.html" class="dropdown-item">RRC</a>
                         <a href="yrc.html" class="dropdown-item">YRC</a>
                         <a href="sports.html" class="dropdown-item">Sports</a>
                         <a href="antiRagging.html" class="dropdown-item">Anti Ragging</a>
+                        <a href="discipline.html" class="dropdown-item">Discipline Rules</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -201,7 +203,7 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a href="" class="nav-link bold-nav-link">Gallery</a>
+                    <a href="../gallery.html" class="nav-link bold-nav-link">Gallery</a>
                 </li>
                 <li class="nav-item">
                     <a href="../contactus.html" class="nav-link bold-nav-link">ContactUs</a>
@@ -256,7 +258,7 @@
         }
         .content{
             font-size: 20px;
-            padding: 0px 20px;
+            padding: 0px 10px;
             text-align: justify;
         }
         .quoites{
@@ -284,7 +286,7 @@
             font-size: 18px;
         }
         .licontent{
-            padding-top: 10px;
+            padding: 10px 10px 0px 0px;
             font-size: 20px;
             text-align: justify;
         }
@@ -303,6 +305,26 @@
             .box h4{
                 font-size: 24px;
             }
+            .slider-lap{
+                display: none;
+            }
+        }
+
+        @media (min-width:767px) {
+            .slider-mob{
+                display: none;
+            }
+        }
+
+        .slider-mob img, .slider-lap img{
+            border-radius: 10px;
+        }
+
+        .slider-mob{
+            padding: 5px;
+        }
+        .slider-lap{
+            padding: 20px;
         }
     </style>
 
@@ -329,8 +351,69 @@
             </div>
         </div>
         <div class="photos up">
-            <h2><span>Check out our Sports Gallery</span></h2>  
-        </div>  
+            <h2 class="text-center"><span>Check out our Sports Gallery</span></h2>  
+        </div> 
+        
+        <div class="slider-lap up">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../../media/SlideShow/img2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../media/SlideShow/img2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../media/SlideShow/img2.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="slider-mob up">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../../media/SlideShow/img2-mob.png" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../media/SlideShow/img2-mob.png" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../media/SlideShow/img2-mob.png" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../media/SlideShow/img2-mob.png" class="d-block w-100 h-100" alt="...">
+                  </div>
+                </div>
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button> -->
+              </div>
+        </div>
     </div>
 
         <!-- footer -->
