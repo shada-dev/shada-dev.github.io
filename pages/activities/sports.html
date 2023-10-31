@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        html{
+            overflow-x: hidden;
+        }
+        body{
+            font-family: "Roboto Slab";
+            overflow-x: hidden;
+        }
+        @media (max-width:477px) {
+            .logo{
+                margin-top: 35px;
+            }
+        }
+
+        @media (max-width: 1021px) {
+            .content-wrapper {
+            flex-direction: column; /* Stack vertically on small screens */
+            }
+        }
+        /* Show the dropdown on hover */
+        @media (min-width: 992px) {
+        .navbar-nav .nav-item.dropdown .dropdown-menu {
+            display: none;
+        }
+        
+        .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+            position: absolute;
+            z-index: 1000;
+        }
+        }    
+
+        .content-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: stretch;
+        width: 100%;
+        max-width: 1200px; /* Adjust the maximum width as needed */
+        }
+
+        @media (max-width: 991px){
+        .content-wrapper{
+            flex-direction: column;
+        }
+        }
+        .up{
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: all 1s ease;
+        }
+
+        .up.activateUp{
+        transform: translatey(0px);
+        opacity: 1;
+        }
+
+        #footer{
+        background-color: #1C2B4B;
+        padding-top: 10px;
+        }
+        #footer p, h5{
+        color: whitesmoke;
+        }
+        .credits{
+        color: #95A3B3;
+        }
+        .bold-nav-link{
+          font-size: 17px;
+        }
+        .header{
+            background-color: #1C2B4B;
+            justify-content: center;
+        }
+
+        .title{
+            color: whitesmoke;
+            text-align: center;
+            margin: 0px 0px 20px 0px;
+        }
+
+        .title h1{
+            text-align: center;
+        }
+
+        .logo img{
+            height: 125px;
+            width: 125px;
+            margin: 20px 20px 20px 20px;
+        }
+
+        @media (max-width:991px) {
+            .title h4{
+                display: none;
+            }
+            .title h5{
+                display: none;
+            }
+            .logo img{
+                height: 125px;
+                width: 125px;
+                margin-top: -15px;
+            }
+            .logo{
+                padding: 20px 10px 20px 20px;
+            }
+            .title h1{
+                color: whitesmoke;
+                font-size: 30px;
+                margin-top: 7px;
+                padding-right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="d-flex header">            
+            <div class="logo">
+                <img src="/media/logo/annaUniversityLogo.png" alt="UCE logo">
+            </div>
+            <div class="title">
+                <h1>University College of Engineering, Thirukkuvalai</h1>
+                <h4>(A Constitutent College of Anna University::Chennai and Approved by AICTE, New Delhi)</h4>
+                <h5>THIRUKKUVALAI 601204 - NAGAPATTINAM</h5>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg" style="background-color:#95A3B3;">
+        <div class="container">
+            <a href="../../index.html" class="navbar-brand bold-nav-link">UCETKY</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand-Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a href="../../index.html" class="nav-link bold-nav-link">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle bold-nav-link" id="navbarDropdown-about" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown-about">
+                        <a href="../aboutus/profile.html" class="dropdown-item">Profile</a>
+                        <a href="../aboutus/missionAndVission.html" class="dropdown-item">Mission and Vision</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="../dean.html" class="nav-link" >Dean's Desk</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle bold-nav-link" id="navbarDropdown-studentneeds" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administration</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown-studentneeds">
+                        <a href="../administration/universityAdministration.html" class="dropdown-item">University Administration</a>
+                        <a href="../administration/collegeAdministration.html" class="dropdown-item">College Administration</a>
+                        <a href="../administration/unitOffice.html" class="dropdown-item">Unit Office</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle bold-nav-link" id="navbarDropdown-academics" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Departments</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown-academics">
+                        <a href="../departments/cse/cse.html" class="dropdown-item">CSE</a>
+                        <a href="../departments/ece/ece.html" class="dropdown-item">ECE</a>
+                        <a href="../departments/eee/eee.html" class="dropdown-item">EEE</a>
+                        <a href="../departments/mech/mech.html" class="dropdown-item">MECH</a>
+                        <a href="../departments/civil/civil.html" class="dropdown-item">CIVIL</a>
+                        <a href="../departments/hs/hs.html" class="dropdown-item">SCIENCE AND HUMANITIES</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle bold-nav-link " id="navbarDropdown-studentActivites" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Student Activites</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown-studentActivites">
+                        <a href="alumini.html" class="dropdown-item">Alumini</a>
+                        <a href="nss.html" class="dropdown-item">NSS</a>
+                        <a href="rrc.html" class="dropdown-item">RRC</a>
+                        <a href="yrc.html" class="dropdown-item">YRC</a>
+                        <a href="sports.html" class="dropdown-item">Sports</a>
+                        <a href="antiRagging.html" class="dropdown-item">Anti Ragging</a>
+                        <a href="discipline.html" class="dropdown-item">Discipline Rules</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="../facilities.html" class="nav-link bold-nav-link">Facilities</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle bold-nav-link" id="navbarDropdown-downloads" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Downloads</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown-downloads">
+                        <a href="../../media/downloads/Bonafied_Certificate.pdf" target="_blank" class="dropdown-item">Bonafide</a>
+                        <a href="../../media/downloads/NoDueCertificate.pdf" target="_blank" class="dropdown-item">No Due</a>
+                        <a href="../../media/downloads/leaveform.pdf" target="_blank" class="dropdown-item">Leave Form</a>
+                        <a href="../../media/downloads/WIFI-FORM-STUDENT.pdf" target="_blank" class="dropdown-item">WIFI form</a>
+                        <a href="../../media/downloads/attendence.pdf" target="_blank" class="dropdown-item">Attendence Certificate For Transfer Students</a>
+                        <a href="../../media/downloads/Hostel_Caution_Deposit_Refund_Form.pdf" target="_blank" class="dropdown-item">Hostel Caution Deposit Refund Form</a>    
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="../gallery.html" class="nav-link bold-nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../contactus.html" class="nav-link bold-nav-link">ContactUs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        .para{
+            animation-name: homepara;
+            animation-duration: 1s;
+            animation-delay: 0.5;
+        }
+
+        @keyframes homepara {
+        0%{
+            transform: translateY(150px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        }
+        h1 span{
+            background-color: #1C2B4B;
+            border-radius: 5px;
+            padding: 10px;
+            color: whitesmoke;
+        }
+        h1{
+            padding: 30px 0px 0px 0px;
+            text-align: center;
+        }
+        h2 span{
+            background-color: #1C2B4B;
+            border-radius: 5px;
+            padding: 10px;
+            color: whitesmoke;
+        }
+        h2{
+            padding: 30px 0px 20px 0px;
+            /* text-align: center; */
+        }
+        .rccLogo{
+            display: flex;
+            justify-content: center;
+        }
+        .content{
+            font-size: 20px;
+            padding: 0px 10px;
+            text-align: justify;
+        }
+        .quoites{
+            color: red;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        .table-custom{
+            padding-top: 20px;
+            font-size: 20px;
+        }
+        .box{
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            display:flex;
+            height: 175px;
+            width: 400px;
+        }
+        .outerbox{
+            display: flex;
+            justify-content: end;
+        }
+        .box p{
+            font-size: 18px;
+        }
+        .licontent{
+            padding: 10px 10px 0px 0px;
+            font-size: 20px;
+            text-align: justify;
+        }
+        .boxpt{
+            position: relative;
+            left: 40px;
+            top: 35px;
+        }
+        @media(max-width:767px){
+            .box p{
+                font-size: 15px;
+            }
+            .box h3{
+                font-size: 27px;
+            }
+            .box h4{
+                font-size: 24px;
+            }
+            .slider-lap{
+                display: none;
+            }
+        }
+
+        @media (min-width:767px) {
+            .slider-mob{
+                display: none;
+            }
+        }
+
+        .slider-mob img, .slider-lap img{
+            border-radius: 10px;
+        }
+
+        .slider-mob{
+            padding: 5px;
+        }
+        .slider-lap{
+            padding: 20px;
+        }
+    </style>
+
+    <div class="container">
+        <h2 class="para"><span>Sports</span></h2>
+        <p class="content para">Besides the academic activities Students would like together attention relieved and focused on fun and physique. Sports activities help the students to keep them fit both mentally and physically. The institution provides abundant facilities for the students to get accustomed with the varied sports activities like Basket Ball, Football , Hockey, Cricket, Throw ball, Ball-badminton, Kabbadi, Aesthetics, Kho-Kho, Volley Ball and indoor games like Badminton, Cress, Carom, Table Tennis and Weight-lifting. Our students know all the angles, to bring laurels to the college and themselves.
+        </p>
+        <h2 class="para"><span>Achievements</span></h2>
+        <ul>
+            <li class="licontent up">Our students participate in 25 sports and games conducted by other colleges.</li>
+            <li class="licontent up">More than 800 students are involved in sports activities inside campus.</li>
+            <li class="licontent up">Zonal Kabbadi and Inter zonal Chess Tournaments are conducted in the campus.SA Trophy state level Intercollegiate end School level Tournaments for Basket Ball, Volley Ball & Table Tennis are organized in the college premises.</li>
+            <li class="licontent up">SA Trophy state level Intercollegiate end School level Tournaments for Basket Ball, Volley Ball & Table Tennis are organized in the college premises.</li>
+        </ul>
+        <div class="outerbox up">
+            <div class="boxpt">
+                <h3 style="color: #FF1212; font-weight: 700;">Physical Director</h3>
+                <h4 style="font-weight: 800;">Dr. Selvakumar .P</h4>
+            </div>
+            <div class="box ">
+                <h3 style="color: #FF1212; font-weight: 700;">COORDINATOR</h3>
+                <h4 style="font-weight: 800;">Mr.HariHaran.R</h4>
+                <p>Assistant Professor\ECE.</p>
+            </div>
+        </div>
+        <div class="photos up">
+            <h2 class="text-center"><span>Check out our Sports Gallery</span></h2>  
+        </div> 
+        
+        <div class="slider-lap up">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../../media/SlideShow/img2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../media/SlideShow/img2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../media/SlideShow/img2.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="slider-mob up">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../../media/SlideShow/img2-mob.png" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../media/SlideShow/img2-mob.png" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../media/SlideShow/img2-mob.png" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../media/SlideShow/img2-mob.png" class="d-block w-100 h-100" alt="...">
+                  </div>
+                </div>
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button> -->
+              </div>
+        </div>
+    </div>
+
+        <!-- footer -->
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-muted " id="footer">
+        <!-- Section: Links  -->
+        <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h5 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>UCE TKY
+                </h5>
+                <p>
+                    (A Constitutent College of Anna University::Chennai and Approved by AICTE, New Delhi)
+                </p>
+                <p>
+                    THIRUKKUVALAI 601204 - NAGAPATTINAM
+                </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h5 class="text-uppercase fw-bold mb-4">
+                    Useful links
+                </h5>
+                <p>
+                <a href="../index.html" class="text-reset">Home</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Dean's Desk</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Facilities</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Gallery</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h5 class="text-uppercase fw-bold mb-4">
+                    Downloads
+                </h5>
+                <p>
+                <p>
+                <a href="#!" class="text-reset"></a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Bonafide</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">No Due</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Anti Ragging Application</a>
+                </p>
+                <p>
+                    <a href="#!" class="text-reset">On Duty Application</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h5 class="text-uppercase fw-bold mb-4">Contact</h5>
+                <p><i class="fas fa-home"></i>
+                    University College of Engineering, Thirukkuvalai
+                    Nagapattinam District.
+                    Nearest Railway Station - Thiruvarur
+                    Pincode - 610204</p>
+                <p>
+                <i class="fas fa-envelope"></i>
+                dean_ucetk@aucetk.edu.in, deantkly@gmail.com
+                </p>
+                <p><i class="fas fa-phone "></i>Phone: +91 04366-245234</p>
+                <p><i class="fas fa-print "></i>Mobile No: +91 9363338721</p>
+            </div>
+            <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        </section>
+        <!-- Section: Links  -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-4 credits" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2023
+        <a class="text-reset fw-bold" href="">Designed and Developed by Web Team, UCETKY</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+  <!-- Footer -->
+
+
+    <script>
+        window.addEventListener('scroll', up);
+
+        function up() {
+        var reveals = document.querySelectorAll('.up');
+        var windowheight = window.innerHeight;
+
+        for (var i = 0; i < reveals.length; i++) {
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 50;
+
+            if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add('activateUp');
+            } else {
+            //reveals[i].classList.remove('activateUp');
+            }
+        }
+        }
+    </script>
+</body>
+</html>

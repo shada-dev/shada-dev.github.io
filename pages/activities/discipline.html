@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISCIPLINE RULES</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        html{
+            overflow-x: hidden;
+        }
+        body{
+            font-family: "Roboto Slab";
+            overflow-x: hidden;
+        }
+
+        @media (max-width: 1021px) {
+            .content-wrapper {
+            flex-direction: column; /* Stack vertically on small screens */
+            }
+        }
+
+        /* Show the dropdown on hover */
+        @media (min-width: 992px) {
+        .navbar-nav .nav-item.dropdown .dropdown-menu {
+            display: none;
+        }
+        
+        .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+            position: absolute;
+            z-index: 1000;
+        }
+        }    
+
+        .content-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: stretch;
+        width: 100%;
+        max-width: 1200px; /* Adjust the maximum width as needed */
+        }
+
+        .up{
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: all 1s ease;
+        }
+
+        .up.activateUp{
+        transform: translatey(0px);
+        opacity: 1;
+        }
+
+        #footer{
+        background-color: #1C2B4B;
+        padding-top: 10px;
+        }
+        #footer p, h5{
+        color: whitesmoke;
+        }
+        .credits{
+        color: #95A3B3;
+        }
+        .bold-nav-link{
+          font-size: 17px;
+        }
+        .header{
+            background-color: #1C2B4B;
+            justify-content: center;
+        }
+
+        .title{
+            color: whitesmoke;
+            text-align: center;
+            margin: 20px 0px 20px 0px;
+        }
+
+        .title h1{
+            text-align: center;
+        }
+
+        .logo img{
+            height: 125px;
+            width: 125px;
+            margin: 20px 20px 20px 20px;
+        }
+
+    @media (max-width:991px) {
+            .title h4{
+                display: none;
+            }
+            .title h5{
+                display: none;
+            }
+            .logo img{
+                height: 125px;
+                width: 125px;
+            }
+            .logo{
+                padding: 20px 10px 20px 20px;
+            }
+            .title h1{
+                color: whitesmoke;
+                font-size: 30px;
+                margin-top: 7px;
+                padding-right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="d-flex header">            
+            <div class="logo">
+                <img src="/media/logo/annaUniversityLogo.png" alt="UCE logo">
+            </div>
+            <div class="title">
+                <h1>University College of Engineering, Thirukkuvalai</h1>
+                <h4>(A Constitutent College of Anna University::Chennai and Approved by AICTE, New Delhi)</h4>
+                <h5>THIRUKKUVALAI 601204 - NAGAPATTINAM</h5>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg" style="background-color:#95A3B3;">
+        <div class="container">
+            <a href="../../index.html" class="navbar-brand bold-nav-link">UCETKY</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand-Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a href="../../index.html" class="nav-link bold-nav-link">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle bold-nav-link" id="navbarDropdown-about" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown-about">
+                        <a href="../aboutus/profile.html" class="dropdown-item">Profile</a>
+                        <a href="../aboutus/missionAndVission.html" class="dropdown-item">Mission and Vision</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="../dean.html" class="nav-link" >Dean's Desk</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle bold-nav-link" id="navbarDropdown-studentneeds" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administration</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown-studentneeds">
+                        <a href="../administration/universityAdministration.html" class="dropdown-item">University Administration</a>
+                        <a href="../administration/collegeAdministration.html" class="dropdown-item">College Administration</a>
+                        <a href="../administration/unitOffice.html" class="dropdown-item">Unit Office</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle bold-nav-link" id="navbarDropdown-academics" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Departments</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown-academics">
+                        <a href="../departments/cse/cse.html" class="dropdown-item">CSE</a>
+                        <a href="../departments/ece/ece.html" class="dropdown-item">ECE</a>
+                        <a href="../departments/eee/eee.html" class="dropdown-item">EEE</a>
+                        <a href="../departments/mech/mech.html" class="dropdown-item">MECH</a>
+                        <a href="../departments/civil/civil.html" class="dropdown-item">CIVIL</a>
+                        <a href="../departments/hs/hs.html" class="dropdown-item">SCIENCE AND HUMANITIES</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle bold-nav-link " id="navbarDropdown-studentActivites" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Student Activites</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown-studentActivites">
+                        <a href="alumini.html" class="dropdown-item">Alumini</a>
+                        <a href="nss.html" class="dropdown-item">NSS</a>
+                        <a href="rrc.html" class="dropdown-item">RRC</a>
+                        <a href="yrc.html" class="dropdown-item">YRC</a>
+                        <a href="sports.html" class="dropdown-item">Sports</a>
+                        <a href="antiRagging.html" class="dropdown-item">Anti Ragging</a>
+                        <a href="discipline.html" class="dropdown-item">Discipline Rules</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="../facilities.html" class="nav-link bold-nav-link">Facilities</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle bold-nav-link" id="navbarDropdown-downloads" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Downloads</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown-downloads">
+                        <a href="../../media/downloads/Bonafied_Certificate.pdf" target="_blank" class="dropdown-item">Bonafide</a>
+                        <a href="../../media/downloads/NoDueCertificate.pdf" target="_blank" class="dropdown-item">No Due</a>
+                        <a href="../../media/downloads/leaveform.pdf" target="_blank" class="dropdown-item">Leave Form</a>
+                        <a href="../../media/downloads/WIFI-FORM-STUDENT.pdf" target="_blank" class="dropdown-item">WIFI form</a>
+                        <a href="../../media/downloads/attendence.pdf" target="_blank" class="dropdown-item">Attendence Certificate For Transfer Students</a>
+                        <a href="../../media/downloads/Hostel_Caution_Deposit_Refund_Form.pdf" target="_blank" class="dropdown-item">Hostel Caution Deposit Refund Form</a> 
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="../gallery.html" class="nav-link bold-nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../contactus.html" class="nav-link bold-nav-link">ContactUs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <style>
+         h3 span{
+            background-color: #1C2B4B;
+            border-radius: 5px;
+            padding: 10px;
+            color: whitesmoke;
+        }   
+        h3{
+            margin: 20px 0px;
+        }
+        .img{
+            height: 200px;
+            width: 100%;
+        }
+        .content{
+            padding: 20px;
+            font-size: 20px;
+        }
+        .img{
+            border-radius: 5px;
+            background: #ffffff;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+            transition: transform 0.1s ease;
+        }
+        .img:hover{
+            transform: scale(1.01);
+        }
+        @media (min-width:991px) {
+            .img{
+                height: 600px;
+            }
+        }
+        @media (min-width:700px) {
+            .img{
+                height: 300px;
+            }
+        }
+        h2{
+            font-size: xx-large;
+            color: #1C2B4B;
+        }
+        .para{
+            animation-name: homepara;
+            animation-duration: 1s;
+            animation-delay: 0.5;
+        }
+
+        @keyframes homepara {
+        0%{
+            transform: translateY(150px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        }
+        ol li{
+            padding: 0px 7.5px;
+            font-size: 20px;
+            text-align: justify;
+        }
+    </style>
+
+   <div class="container para">
+        <h3 class=""><span>DISCIPLINE RULES</span></h3>
+        <ol>
+            <li>The Dean shall be responsible for the maintenance of discipline amongst the students of the College and shall exercise all powers necessary for this purpose, including the power to impose fine, forfeiture of attendance, suspension a student from the College for limited/unlimited period.</li>
+            <li>The Dean may either suo moto or on a report received from the Head of the Department, take cognizance of any lapse or a serious breach of discipline and levy suitable punishment, which may even include expulsion of a student from the College</li>
+            <li>Residents of the College hostel, going on strike, hunger strike, or any way found guilty of serious breach of discipline in or outside the College campus, may be required to quit the hostel and they shall not ordinarily be readmitted to the privileges of residence in the hostel.</li>
+            <li>Memoranda, petitions or complaints from individual student of the College to any higher authority must be submitted through the concerned Head of the Department.</li>
+            <li>tudents are prohibited from organizing any meeting or entertainment at College, or collecting money for any purpose within or outside the College, without the prior permission of the Dean, in writing.</li>
+            <li>Students going to other Colleges or Institutions, and indulging in acts of indiscipline such as organizing demonstrations and strikes, would be liable for punishment</li>
+            <li>Students shall not hold meeting for criticizing the authorities of the College or University. Such meeting shall be deemed unlawful, and the Dean may take such action as he may feel necessary under the rules</li>
+            <li>Students are advised to take care of their identity cards. The loss of which must be promptly reported.</li>
+            <li>All students admitted to the college and hostel are subject to the discipline and control of the college authorities. The students are required to adhere strictly to the rules and regulations that may be framed from time to time by the college authorities. Proper observance of college discipline, good conduct and participation in games and other events will play an important role in recommendation for final university examination/scholarships/placement/ award of certificates, when leaving the college. In case of breach of discipline the Dean shall have the power to fine, suspend, rusticate or even expel the concerned student(s) from the College.</li>
+            <li>Ragging is prohibited vide Tamilnadu State 'Anti-Ragging Act, 1999'. Any student found indulging in ragging in any form within or outside the college and hostel shall be immediately expelled from the college and necessary disciplinary action will be taken as per orders of Honorable Supreme Court of India.</li>
+            <li>Students are required to show due regard to the property of the college. Any student found guilty of defacing or damaging property like doors, windows, furniture, equipment, fixtures, books, buildings, vehicles, etc. of the college or hostel shall be liable for penal action and expulsion from the college.</li>
+            <li>Students are expected to co-operate in ensuring a virus free environment in the computer system.</li>
+            <li>All notices shall be displayed on the notice board and /or on the website and it shall be presumed that the students have knowledge of the same. Any negligence to read the notices and the loss thereafter will not be the responsibility of the college.</li>
+            <li>Students shall handle all equipments issued to them with utmost care. He /she will be held responsible for any loss or damage caused to the equipment.</li>
+            <li>Students should adhere to the dress regulations prescribed by the college and are required to wear the prescribed uniform.</li>
+            <li>No student shall be permitted to take the College / University examination unless he /she has paid all his / her dues to the college / hostel and his/her progress, conduct, and attendance are found satisfactory.</li>
+            <li>All students shall carry their identity cards and shall produce them whenever called for by the authorities.</li>
+            <li>College authorities, under no circumstances shall accept any liability of an accident in which a student is involved during his/her stay in the college or on educational tour/visit. Students are therefore, cautioned to conduct themselves in a careful manner wherever they are.</li>
+            <li>No student shall Use mobile phones in the class rooms / labs/examination hall / Practical examination/Library and during events of the Institution. Mobile phones of students, not adhering to this rule, will be confiscated by college authorities.</li>
+            <li>Students shall neither drive nor bring four wheelers to the college campus. Two wheelers will be parked properly in parking areas and students are expected to help security guards in ensuring proper parking discipline.</li>
+            <li>The Parents / Guardians of the students are expected to see that their Wards should adhere the rules & regulations of the College.</li>
+            <li>Students are strictly prohibited to organize / conduct any function outside the College Campus unless permitted by the College Authorities.</li>
+            <li>Being a professional college and with students who are adults (eligible to exercise their adult franchise); we expect a high standard of discipline with emphasis on self-discipline. It would be pragmatic to implement rules and regulations of the college enforced by Ordinances through self-discipline.</li>
+            
+        </ol>
+   </div>
+
+        <!-- footer -->
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-muted " id="footer">
+    <!-- Section: Links  -->
+    <section class="">
+    <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h5 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>UCE TKY
+            </h5>
+            <p>
+                (A Constitutent College of Anna University::Chennai and Approved by AICTE, New Delhi)
+            </p>
+            <p>
+                THIRUKKUVALAI 601204 - NAGAPATTINAM
+            </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h5 class="text-uppercase fw-bold mb-4">
+                Useful links
+            </h5>
+            <p>
+            <a href="index.html" class="text-reset">Home</a>
+            </p>
+            <p>
+            <a href="pages/dean.html" class="text-reset">Dean's Desk</a>
+            </p>
+            <p>
+            <a href="" class="text-reset">Facilities</a>
+            </p>
+            <p>
+            <a href="pages/gallery.html" class="text-reset">Gallery</a>
+            </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h5 class="text-uppercase fw-bold mb-4">
+                Downloads
+            </h5>
+            <p>
+            <a href="media/downloads/Bonafied_Certificate.pdf" class="text-reset">Bonafide</a>
+            </p>
+            <p>
+            <a href="media/downloads/NoDueCertificate.pdf" class="text-reset">No Due</a>
+            </p>
+            <p>
+            <a href="media/downloads/leaveform.pdf" class="text-reset">Leave Form</a>
+            </p>
+            <p>
+                <a href="media/downloads/Hostel_Caution_Deposit_Refund_Form.pdf" class="text-reset">Hostel Caution Deposit Refund Form</a>
+            </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h5 class="text-uppercase fw-bold mb-4">Contact</h5>
+            <p><i class="fas fa-home "></i>
+                University College of Engineering, Thirukkuvalai
+                Nagapattinam District.
+                Nearest Railway Station - Thiruvarur
+                Pincode - 610204</p>
+            <p>
+            <i class="fas fa-envelope"></i>
+            dean_ucetk@aucetk.edu.in, deantkly@gmail.com
+            </p>
+            <p><i class="fas fa-phone "></i>Phone: +91 04366-245234</p>
+            <p><i class="fas fa-print "></i>Mobile No: +91 9363338721</p>
+        </div>
+        <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+    </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4 credits" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2023
+    <a class="text-reset fw-bold" href="">Designed and Developed by Web Team, UCETKY</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+
+    <script>
+        window.addEventListener('scroll', up);
+
+        function up() {
+        var reveals = document.querySelectorAll('.up');
+        var windowheight = window.innerHeight;
+
+        for (var i = 0; i < reveals.length; i++) {
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 50;
+
+            if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add('activateUp');
+            } else {
+            //reveals[i].classList.remove('activateUp');
+            }
+        }
+        }
+    </script>
+</body>
+</html>
