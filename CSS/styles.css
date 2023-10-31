@@ -213,7 +213,7 @@ h1{
 }
 
 .courses-mob ul{
-  list-style-position: outside;
+  list-style-type: disc;
 }
 
 .courseOffered{
@@ -399,6 +399,7 @@ h1{
   .apj{
     height: 250px!important;
     width: 200px!important;
+    justify-content: center;
   }
 }
 
