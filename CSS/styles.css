@@ -1,0 +1,513 @@
+html{
+  overflow-x: hidden;
+}
+
+body{
+  font-family: "Roboto Slab";
+  overflow-x: hidden;
+}
+
+.bold-nav-link{
+  font-size: 17px;
+}
+
+.header{
+  background-color: #1C2B4B;
+  justify-content: center;
+  margin: 0 auto !important;
+}
+
+.title{
+  color: whitesmoke;
+  text-align: center;
+  margin: -20px 0px 0px 0px;
+}
+
+
+.logo img{
+  height: 125px;
+  width: 125px;
+  margin: 20px 20px 0px 20px;
+  margin-bottom: 20px;
+}
+
+.heading span{
+  background-color: #1C2B4B;
+  border-radius: 5px;
+}
+
+
+
+@media (min-width: 992px) {
+  .navbar-nav .nav-item.dropdown .dropdown-menu {
+    display: none;
+  }
+  
+  .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+  }
+
+  .newsAndUpdates{
+    display: none;
+  }
+
+  .courseOffered .courses-heading{
+    text-align: start !important;
+  }
+  .rlcardsmob{
+    display: none !important;
+  }
+  .courseOffered-mob{
+    display: none;
+  }
+  .slide-mob{
+    display: none;
+  }
+}    
+
+@media (max-width: 991px) {
+  body{
+    overflow-x: hidden !important;
+  }
+  .separator{
+    display: none;
+  }
+
+  .aboutAndMarqee {
+    flex-direction: column !important;
+  }
+
+  .classImg img{
+    display: none;
+  }
+  .aboutAndMarqee{
+    gap: 0px;
+  }
+  .header h1{
+    position: relative;
+    top: 15px;
+  }
+  .logo img{
+    height: 125px;
+    width: 125px;
+  }
+  .logo{
+    padding: 20px 10px 20px 20px; 
+  }
+  .title h1{
+    color: whitesmoke;
+    font-size: 30px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+  .rlcards{
+    display: none !important;
+  }
+  .thingsthing{
+    flex-direction: column;
+  }
+  .apj.up{
+    margin:0px auto !important;
+    justify-content: center;
+  }
+  .courseOffered{
+    display: none !important;
+  }
+  .slide-lg{
+    display: none;
+  }
+  .newsAndUpdates{
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:860px) {
+  .title h4{
+    display: none;
+  }
+  .title h5{
+    display: none;
+  }
+}
+
+.para{
+  animation-name: homepara;
+  animation-duration: 1s;
+  animation-delay: 0.5;
+}
+
+@keyframes homepara {
+  0%{
+    transform: translateY(150px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+h2 span{
+  background-color: #1C2B4B;
+  border-radius: 5px;
+  padding: 10px;
+  color: whitesmoke;
+}
+h2{
+  padding: 30px 0px 0px 0px;
+  text-align: center;
+}
+
+h1{
+  padding: 30px 0px 10px 0px;
+  text-align: center;
+}
+
+.content{
+  font-size: 20px;
+  padding-top: 10px;
+  text-indent: 2em;
+  text-align: justify;
+}
+
+.markqueebox{
+  height: 350px;
+  max-width: auto;
+  margin: 0px auto 0px auto!important;
+  justify-content: center !important;
+}
+
+.markqueebox{
+  margin-bottom: 20px;
+}
+
+.markqueebox p{
+  text-align: center;
+}
+
+.aboutcollege{
+  flex: 1;
+}
+
+.aboutAndMarqee{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.separator{
+  height: 325px;
+  border: 2.5px solid #1C2B4B;
+  border-radius: 50%;
+}
+.separator1{
+  height: 5px; 
+  background: #000;
+  border: none;
+  width: 80%;
+  margin: 10px auto;
+  border-radius: 50%;
+}
+
+.courses-mob ul{
+  list-style-position: outside;
+}
+
+.courseOffered{
+  justify-content: space-around;
+  gap: 0px;
+  padding-left: 30px;
+}
+
+.classImg img{
+  max-width: 550px;
+  max-height: 550px;
+  margin-top: 20px;
+  filter: drop-shadow(0px 10px 5px grey);
+}
+
+.courses h3{
+  padding-top: 5px;
+  color: black;
+  text-align: start;
+}
+.courses-mob h3{
+  padding-top: 5px;
+  color: black;
+  text-align: start;
+  padding-left: 10px;
+}
+
+.courses a{
+  text-decoration: none;
+}
+.courses-mob a{
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+
+.courses .heading{
+  padding-bottom: 20px;
+}
+.courses-heading-mob{
+  padding-bottom: 20px;
+}
+
+.courses{
+  padding: 20px;
+}
+
+.courses-heading{
+  margin-bottom: 30px ;
+}
+
+.courses a img{
+  height: 40px;
+  width: 30px;
+}
+
+
+.link-card{
+  height: 250px;
+  width: 200px;
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+  transition: transform 0.2s ease;
+}
+.link-card:hover{
+  transform: scale(1.1);
+}
+
+.link-cardmob{
+  height: 100px;
+  width: 300px;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+}
+
+
+.rlcards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.rlcardsmob{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.link-card img{
+  height: 150px;
+  width: 150px;
+  margin-left: 25px;
+  padding: 0px 20px 50px 20px;
+}
+.link-cardmob img{
+  height: 65px;
+  width: 65px;
+}
+
+.insidecardmob{
+  padding-top: 17px;
+}
+
+.insidecardmob h2{
+  padding-top: 5px;
+}
+
+
+.link-card h4{
+  padding-top: 30px;
+  text-decoration: none;
+  color: #95A3B3;
+}
+.link-cardmob h3{
+  padding: 10px auto;
+  text-decoration: none;
+  color: #95A3B3;
+}
+
+.rlheading{
+  padding-bottom: 40px;
+}
+
+.imgleft{
+  position: relative;
+  left: 7px;
+}
+
+.thingsHeading{
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+  .markqueebox {
+    float: right !important;
+
+  }
+}
+@media (max-width: 991px) {
+  .courses {
+    padding-left: 0 !important;
+    margin-left: -50px !important;
+  }
+  
+}
+
+
+.Theading span{
+  background-color: #1C2B4B;
+  border-radius: 5px;
+  padding: 10px;
+  color: whitesmoke;
+  margin-top: 20px;
+}
+
+.things h3{
+  padding: 10px;
+}
+
+.things .list{
+  padding-top: 20px;
+  z-index: -1;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.apj{
+  height: 350px;
+  width: 325px;
+  z-index: -1;
+  justify-content: end;
+  margin-bottom: -1px;
+  filter: drop-shadow(0px 2px 5px grey);
+}
+
+@media (max-width:280px) {
+  .apj{
+    height: 250px!important;
+    width: 200px!important;
+  }
+}
+
+.quote{
+  font-size: x-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.apjtext{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer{
+  background-color: #1C2B4B;
+  padding-top: 10px;
+}
+#footer p, h5{
+  color: whitesmoke;
+}
+.credits{
+  color: #95A3B3;
+}
+
+
+
+.up{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.up.activateUp{
+  transform: translatey(0px);
+  opacity: 1;
+}
+
+
+.right{
+  position: relative;
+  transform: translateX(-10px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.right.activateRight{
+  transform: translate(0px);
+  opacity: 3;
+}
+
+.left{
+  position: relative;
+  transform: translateX(10px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.left.activateLeft{
+  transform: translate(0px);
+  opacity: 1;
+}
+
+.uponlap{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.activateUponactive{
+  transform: translatey(0px);
+  opacity: 1;
+}
