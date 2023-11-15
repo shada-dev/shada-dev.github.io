@@ -193,7 +193,9 @@ marquee{
     position: relative;
     top: 15px;
   }
-  
+  .rlheading{
+    display: none;
+  }
   .rlcards{
     display: none !important;
   }
