@@ -406,7 +406,9 @@ h1{
   box-shadow: 15px 15px 30px #bebebe,
              -15px -15px 30px #ffffff;
 }
-
+.rlheading-mob{
+  margin: 20px;
+}
 
 .rlcards{
   display: flex;
