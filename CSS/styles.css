@@ -335,6 +335,9 @@ marquee{
     left: 0px;
   }
 
+  .important-links{
+    display: none;
+  }
 
 }   
 
@@ -357,6 +360,7 @@ marquee{
     color: #132B94;
     font-weight: 600;
   }
+
   .para2{
     display: none;
   }
@@ -429,6 +433,7 @@ marquee{
   .slide-left{
     display: none;
   }
+
 }
 
 @media (max-width:860px) {
