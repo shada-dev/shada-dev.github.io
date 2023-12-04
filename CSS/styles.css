@@ -333,6 +333,8 @@ marquee{
     color: #000;
   }
 
+
+
   .dropdown-menu {
     border-radius: 5px !important; 
     padding: 0;
@@ -370,6 +372,9 @@ marquee{
     font-weight: 600;
   }
 
+  .rlheading{
+    display: none;
+  }
   .para2{
     display: none;
   }
