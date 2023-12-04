@@ -7,9 +7,30 @@ body{
   overflow-x: hidden;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 
-html{
-  overflow-x: hidden;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6499E9; 
+  border-radius: 5px;
+  opacity: 0.2;
+  padding: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #007aff;
+  opacity: 0.2; 
 }
 
 .bold-nav-link{
@@ -40,6 +61,8 @@ html{
     opacity: 0.9;
   }
 }
+
+
 
 .title{
   margin: 10px 30px;
@@ -99,7 +122,6 @@ html{
   margin: 0px auto 5px auto ;
   font-size: 22.5px;
   text-align: center;
-  text-align: end;
 }
 
 marquee{
@@ -136,24 +158,6 @@ marquee{
   line-height: 25px;
 }
 
-.slide-left a{
-  text-decoration: none;
-  font-size: 20px; 
-  color: black;
-}
-
-.slide-left a span{
-  transition: all 0.1s ease-in-out;
-}
-
-.slide-left a span:hover{
-  color: #0065d1;
-}
-
-.slide-left span p{
-  font-size: 10px;
-}
-
 .slide-right .content{
   font-size: 20px;
   margin-top: 0px;
@@ -184,6 +188,7 @@ marquee{
   background-color: #007aff;
   border-radius: 5px;
   color: white;
+  margin-bottom: 15px;
 }
 
 .slide-left h4{
@@ -339,6 +344,10 @@ marquee{
     display: none;
   }
 
+  
+  .rlheading-mob{
+    display: none;
+  }
 }   
 
 
@@ -375,12 +384,10 @@ marquee{
     position: relative;
     top: 15px;
   }
-  .rlheading{
-    display: none;
-  }
   .rlcards{
     display: none !important;
   }
+
   .thingsthing{
     flex-direction: column;
   }
@@ -579,8 +586,11 @@ h1{
 }
 
 .reveal-element:active{
-  /* transform: scale(1.2); */
-  transform: translateY(45px);
+  transform: scale(0.8);
+}
+
+.reveal-element:active .totop{
+  background-color: #000080;
 }
 
 @keyframes top {
@@ -647,7 +657,7 @@ h1{
              -15px -15px 30px #ffffff;
 }
 .rlheading-mob{
-  margin: 20px;
+  margin: 40px;
 }
 
 .rlcards{
@@ -746,7 +756,7 @@ h1{
   text-align: start;
 }
 
-@media (max-width:767px) {
+@media (max-width:991px) {
   .things .list{
     text-align: center;
     margin-right: 20px;
@@ -775,10 +785,6 @@ h1{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.apjtext{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 
 .creditimg{
   color: #007aff;
@@ -799,6 +805,97 @@ h1{
 
 
 
+
+.il button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  margin-bottom: 10px;
+}
+
+.il button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+.il button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 2.5rem;
+  height: 2.4rem;
+  background: #6499E9;
+  border-radius: 5px;
+}
+
+.il button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+.il button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+.il button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+.il button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: -5px;
+  left: 20px;
+  right: 0;
+  bottom: 15px;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: black;
+  font-weight: 650;
+  line-height: 1.5;
+  text-align: start!important;
+  font-size: 17px;
+  /* justify-content: center; */
+  /* text-transform: uppercase; */
+}
+
+.il button:hover .circle {
+  width: 105%;
+}
+
+.il button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+.il button:hover .button-text {
+  color: #fff;
+}
 
 
 
@@ -835,12 +932,28 @@ h1{
 }
 #footer p, h5{
   color: white;
+  transition: all .3s ease-in-out;
 }
 .credits{
   color: white;
 }
 
+#footer a{
+  text-decoration: none;
+}
 
+#footer .downloads p:hover{
+  text-shadow: 0px 0px 1px white;
+  transform: scale(1.1);
+  padding-left: 5px;
+}
+
+
+#footer .usefullinks p:hover{
+  text-shadow: 0px 0px 1px white;
+  transform: scale(1.1);
+  padding-left: 5px;
+}
 
 @media (max-width:767px) {
   .up{
